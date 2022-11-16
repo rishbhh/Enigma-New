@@ -16,6 +16,7 @@ $(document).ready(function() {
     Horizontal();
     Changehum();
     splt()
+    hd();
     Opaci();
     Works();
     toggel()
@@ -329,6 +330,22 @@ window.addEventListener("load", function() {
         })
         // 
 });
+function hd(){
+    let hide = gsap.timeline({
+        scrollTrigger:{
+            trigger:'.ser-two',
+            start:'-820 top',
+            end:'-500 top',
+            scroller:'.smooth-scroll',
+            scrub:'1'
+            // toggleActions:'pause resume play'
+        }
+    })
+    hide.to(".image-div img",{
+        opacity:0,
+        duration:'0.5'
+    })
+}
 
 // Hero Section
 function HeroSection() {
@@ -481,19 +498,21 @@ function ChangeColor() {
         ScrollTrigger.create({
             trigger: colorSection,
             scroller: ".smooth-scroll",
-            start: "top 80%",
+            start: "top 60%",
             onEnter: () =>
                 gsap.to("body", {
                     backgroundColor: colorSection.dataset.bgcolor,
                     color: colorSection.dataset.textcolor,
-                    overwrite: "auto"
-                }),
+                    overwrite: "auto",
+                    duration:0.5
+                },'-=1'),
             onLeaveBack: () =>
                 gsap.to("body", {
                     backgroundColor: prevBg,
                     color: prevText,
-                    overwrite: "auto"
-                })
+                    overwrite: "auto",
+                    duration:0.5
+                },'-=1')
         });
     });
 
