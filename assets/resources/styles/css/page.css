@@ -916,6 +916,9 @@ template {
   transition: transform 0.3s ease-in-out, opacity 0.1s;
   transition: transform 0.3s ease-in-out, opacity 0.1s, -webkit-transform 0.3s ease-in-out;
 }
+[data-bgcolor] .ht-cursor:before {
+  background: red;
+}
 .ht-cursor-text {
   position: absolute;
   top: -18px;
@@ -1021,7 +1024,7 @@ template {
   color: #D20A0A;
 }
 .-color-white {
-  color: #3f3f3f;
+  color: #ffffff;
 }
 .-color-white .ht-cursor.-text:before {
   opacity: 1 !important;
@@ -9945,7 +9948,7 @@ ul.product-tags li a {
   left: 38px;
 }
 .ser-c .flex-con .left-d .qou img {
-  width: 35px;
+  width: 19px;
 }
 .ser-c .flex-con .left-d p {
   line-height: 1.8;
@@ -10948,7 +10951,7 @@ section.horizontal .animation-wrap.to-left {
     left: 10px;
   }
   .ser-c .flex-con .left-d .qou img {
-    width: 30px;
+    width: 19px;
   }
   .get-in .flex-con .right::after {
     height: 246px;
