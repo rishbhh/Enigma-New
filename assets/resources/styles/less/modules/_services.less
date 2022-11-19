@@ -1787,10 +1787,10 @@ section.horizontal .animation-wrap.to-left {
 
   .ser-two .item {
     padding: 0 0 100px 0px;
-    transform: none !important;
+    transform: none ;
   }
   .ser-two .strategy__item {
-    width: 90% !important;
+    width: 90% ;
     padding: 0 0 100px 15px;
     transform: none !important;
   }
@@ -1799,7 +1799,7 @@ section.horizontal .animation-wrap.to-left {
   }
   .ser-two .item p {
     text-align: left;
-    font-size: 20px !important;
+    font-size: 20px ;
   }
   .service-points {
     padding: 15% 0 10% 0;
@@ -2081,7 +2081,10 @@ section.horizontal .animation-wrap.to-left {
     padding-right: 18%;
   }
   .details-f .cont {
-    width: 50%;
+    width: 100%;
+  }
+  .image-div{
+    display: none;
   }
   .ser-two .item {
     width: 40%;
@@ -2109,6 +2112,8 @@ section.horizontal .animation-wrap.to-left {
   .ser-hero .top-h .tech__dev {
     font-size: 5.5em !important;
   }
+
+  
 }
 
 @media screen and (max-width: 776px) {
@@ -2142,6 +2147,18 @@ section.horizontal .animation-wrap.to-left {
   }
   .ser-two .bo-h {
     font-size: 0.9em;
+  }
+  .ser-two .strategy__item {
+    width: 100%;
+  }
+  .ser-two .item p {
+    text-align: left;
+    font-size: 0.9em !important;
+  }
+  .ser-two .item::before {
+    font-size: 3em;
+    top: 55px;
+    left: 75px;
   }
   .ser-c .flex-con .left-d p {
     font-size: 14px;
