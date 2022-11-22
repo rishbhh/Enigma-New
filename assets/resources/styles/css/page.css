@@ -7002,13 +7002,13 @@ ul.product-tags li a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.about-us-section h1 {
+.about-us-section h2 {
   width: 100%;
   color: #2b2b2b;
   font-family: "Ageo-light";
   font-size: 3.2em;
 }
-.home-sec .about-us-content h1 span b {
+.home-sec .about-us-content h2 span b {
   font-family: "Ageo-Bold";
 }
 .about-us-section .small-h1 {
@@ -7509,7 +7509,7 @@ ul.product-tags li a {
   .about-us-section .b-h1 {
     font-size: 3.2em;
   }
-  .home-sec .about-us-content h1 {
+  .home-sec .about-us-content h2 {
     font-size: 4em;
   }
 }
@@ -7532,7 +7532,7 @@ ul.product-tags li a {
     margin-left: 30px;
     margin-top: 35%;
   }
-  .home-sec .about-us-content h1 {
+  .home-sec .about-us-content h2 {
     font-size: 3.4em;
   }
 }
@@ -7579,7 +7579,7 @@ ul.product-tags li a {
     margin-left: 30px;
     margin-top: 35%;
   }
-  .home-sec .about-us-content h1 {
+  .home-sec .about-us-content h2 {
     font-size: 3em;
   }
 }
@@ -7646,7 +7646,7 @@ ul.product-tags li a {
     margin-left: 30px;
     margin-top: 35%;
   }
-  .home-sec .about-us-content h1 {
+  .home-sec .about-us-content h2 {
     font-size: 3.2em;
   }
 }
@@ -7727,7 +7727,7 @@ ul.product-tags li a {
     margin-top: 35%;
     width: 1000px;
   }
-  .home-sec .about-us-content h1 {
+  .home-sec .about-us-content h2 {
     font-size: 4em;
   }
   .dharan .module--header__bg {
@@ -7751,7 +7751,7 @@ ul.product-tags li a {
     margin-left: 30px;
     margin-top: 35%;
   }
-  .home-sec .about-us-content h1 {
+  .home-sec .about-us-content h2 {
     font-size: 3.9em;
   }
   .dharan .module--header__bg {
@@ -7813,7 +7813,7 @@ ul.product-tags li a {
     margin-left: 30px;
     margin-top: 35%;
   }
-  .home-sec .about-us-content h1 {
+  .home-sec .about-us-content h2 {
     font-size: 3.6em;
   }
   .dharan .module--header__bg {
@@ -7892,7 +7892,7 @@ ul.product-tags li a {
     margin-left: 30px;
     margin-top: 35%;
   }
-  .home-sec .about-us-content h1 {
+  .home-sec .about-us-content h2 {
     font-size: 3.2em;
   }
   .dharan .module--header__bg {
