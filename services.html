@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
@@ -39,10 +39,10 @@ etc" />
 including SEO, SMM, Brand Communication, UI/UX Design, Web Design &amp; Development,
 etc" />
     <meta name="twitter:image" content="https://www.weareenigma.com./images/enigma-digital.jpg" />
-    <link href="assets/resources/styles/css/page.css" type="text/css" rel="stylesheet" />
+     <link rel="preload" href="assets/resources/styles/css/page-dist.css" type="text/css" as="style"
+        onload="this.rel='stylesheet'" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/resources/img/fav-icon.png" type="" sizes="16x16">
     <link href="https://unpkg.com/splitting@1.0.0/dist/splitting.css" type="text/css" rel="stylesheet">
     <link href="/assets/resources/styles/css/st.css" type="text/css" rel="stylesheet">
@@ -178,17 +178,17 @@ etc" />
                 <section class="about-us-section service__section" data-humcolor="#000" data-bgcolor="#fff">
                     <div class="about-us-inner d-flex" id="scroll-direction">
                         <div id="test"></div>
-                        <div class="about-us-image move" data-scroll data-scroll-sticky
-                            data-scroll-target="#scroll-direction"> <img data-scroll
-                                src="/assets/resources/img/shaps/service-bg.webp" alt="image" title="" />
+                        <div class="about-us-image move " data-scroll data-scroll-sticky
+                            data-scroll-target="#scroll-direction"> <img data-scroll class="lazyload"
+                                data-src="/assets/resources/img/shaps/service-bg.webp" alt="image" title="" />
                         </div>
                         <div class="about-us-content">
                             <div class="welcome-heading d-flex justify-content-sb align-items-start flex-w">
-                                <h1 class="small-h1" data-textcolor="#000"> <span class="opacity-0" data-scroll
+                                <h2 class="small-h1"> <span class="opacity-0" data-scroll
                                         data-scroll-delay="0.1" data-scroll-offset="60"> We leverage the power of
                                     </span>
-                                </h1>
-                                <h1 class="b-h1" data-textcolor="#000"> <span class="opacity-0" data-scroll
+                                </h2>
+                                <h1 class="b-h1"> <span class="opacity-0" data-scroll
                                         data-scroll-delay="0.1" data-scroll-offset="60">
                                         Design,
                                     </span><br /> <span class="opacity-0" data-scroll data-scroll-delay="0.1"
@@ -199,7 +199,7 @@ etc" />
                                         data-scroll-offset="60">Technology!
                                     </span>
                                 </h1>
-                                <h1 class="small-h1" data-textcolor="#000"> <span class="opacity-0" data-scroll
+                                <h2 class="small-h1"> <span class="opacity-0" data-scroll
                                         data-scroll-delay="0.1" data-scroll-offset="60">to Engineer Growth-
                                     </span><br />
                                     <span class="opacity-0" data-scroll data-scroll-delay="0.1"
@@ -216,7 +216,7 @@ etc" />
                                         bytes.
                                     </span>
                                     <br />
-                                </h1>
+                                </h2>
                             </div>
 
                         </div>
@@ -242,7 +242,7 @@ etc" />
                                     </p>
                                     <span>
                                         <div class="en-form-submit">
-                                            <a href="strategy.html" class="en-btn en-btn_send" data-magnetic
+                                            <a href="strategy" class="en-btn en-btn_send" data-magnetic
                                                 data-cursor="-opaque"><span data-text="Know
                                                 More">Know
                                                     More<span class="arro"><img
@@ -277,7 +277,7 @@ etc" />
                                         </span>
                                     </p>
                                     <span>
-                                        <div class="en-form-submit"><a href="interface-design.html"
+                                        <div class="en-form-submit"><a href="interface-design"
                                                 class="en-btn en-btn_send" data-magnetic data-cursor="-opaque"><span
                                                     data-text="Know
                                                     More">Know
@@ -306,7 +306,7 @@ etc" />
                                     </p>
                                     <span>
                                         <div class="en-form-submit">
-                                            <a href="technology-development.html" class="en-btn en-btn_send"
+                                            <a href="technology-development" class="en-btn en-btn_send"
                                                 data-magnetic data-cursor="-opaque"><span data-text="Know
                                                 More">Know
                                                     More<span class="arro"><img
@@ -341,7 +341,7 @@ etc" />
                                         </span>
                                     </p>
                                     <span>
-                                        <div class="en-form-submit"><a href="digital-marketing.html"
+                                        <div class="en-form-submit"><a href="digital-marketing"
                                                 class="en-btn en-btn_send" data-magnetic data-cursor="-opaque"><span
                                                     data-text="Know
                                                     More">Know
@@ -575,15 +575,12 @@ etc" />
 
 
 
-    <script src="/assets/vendors/lib/plugins.js"></script>
-    <script src="/assets/resources/js/preloader.js"></script>
-    <script src="/assets/resources/js/cursor.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-
-    <script src="assets/resources/js/page.js"></script>
-    <script src="assets/resources/js/others.js"></script>
+    <script rel="preload" as="script" rel="preload" src="/assets/vendors/lib/plugins.js"></script>
+    <script rel="preload" as="script" rel="preload" src="/assets/resources/js/preloader.js"></script>
+    <script rel="preload" as="script" rel="preload" src="/assets/resources/js/cursor.min.js"></script>
+    <script rel="preload" as="script" rel="preload" as="script" src="/assets/resources/js/lazysize.js"></script>
+    <script rel="preload" as="script" rel="preload" src="assets/resources/js/page.js"></script>
+    <script rel="preload" as="script" rel="preload" src="assets/resources/js/others.js"></script>
 
 
     <script>

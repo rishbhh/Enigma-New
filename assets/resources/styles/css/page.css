@@ -7505,9 +7505,11 @@ ul.product-tags li a {
 @media screen and (max-width: 1920px) {
   .about-us-section .small-h1 {
     font-size: 3.2em;
+    color: #000;
   }
   .about-us-section .b-h1 {
     font-size: 3.2em;
+    color: #000;
   }
   .home-sec .about-us-content h2 {
     font-size: 4em;
@@ -10468,7 +10470,7 @@ ul.product-tags li a {
   font-family: "NeueHaasDisplay-me";
   z-index: 0;
 }
-.scroll-sec2 .back-text h1 {
+.scroll-sec2 .back-text h2 {
   -webkit-transform: translateX(192vw);
   transform: translateX(192vw);
   width: 250vw;
@@ -11100,7 +11102,7 @@ section.horizontal .animation-wrap.to-left {
   padding-bottom: 0;
   font-family: "NeueHaasDisplay-me";
   color: #fff;
-  background-image: url(/assets/resources/img/circle.png);
+  background-image: url(/assets/resources/img/circle-b.webp);
   background-repeat: no-repeat;
   background-position: 100% calc(100% + 120px);
   overflow: hidden;
@@ -13399,7 +13401,7 @@ section:after {
   height: 820px;
 }
 .patr .el-bg {
-  background-image: url(/assets/resources/img/patronum/patronum-elements.png);
+  background-image: url(/assets/resources/img/patronum/patronum-elements.webp);
   position: absolute;
   z-index: 4;
   background-repeat: no-repeat;
@@ -18281,7 +18283,7 @@ lack-strock .marquees__part {
     padding-top: 10.34vw;
   }
 }
-.contact-right .welcome-heading h1 {
+.contact-right .welcome-heading h2 {
   text-transform: uppercase;
   font-size: 5em;
   line-height: 95px;
@@ -18290,7 +18292,7 @@ lack-strock .marquees__part {
   color: #000;
 }
 @media only screen and (min-width: 1680px) {
-  .contact-right .welcome-heading h1 {
+  .contact-right .welcome-heading h2 {
     font-size: 5.95vw;
     line-height: 5.65vw;
     margin-bottom: 3.09vw;
@@ -19374,7 +19376,7 @@ lack-strock .marquees__part {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .contact-right .welcome-heading h1 {
+  .contact-right .welcome-heading h2 {
     text-transform: uppercase;
     font-size: 50px;
     line-height: 55px;
