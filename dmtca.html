@@ -166,7 +166,7 @@
     <main role="main" id="main">
         <div class="scroll-content smooth-scroll" data-scroll-speed="8">
             <div class="wrapper active" data-bgcolor="#fff">
-                <div id="start" class="dharan dmtc" data-humcolor="#fff" style="background: #21D39A;">
+                <div id="start" class="dharan dmtc" data-humcolor="#fff" style="background: #00855a;">
                     <div class="el1 el-bg"></div>
                     <div class="el2 el-bg"></div>
                     <div class="el3 el-bg"></div>
@@ -244,7 +244,19 @@
                         </figure>
                     </div>
                 </div>
-
+                <div id="marquee">
+                    <div data-scroll data-scroll-target="#marquee">
+                       <div>
+                          <h2 data-scroll data-scroll-speed="6" data-scroll-direction="horizontal"><span>Google workspace
+                                manager</span></h2>
+                       </div>
+                       <figure data-scroll data-scroll-speed="5">
+                          <video autoplay="true" preload="true" loop>
+                             <source src="/assets/resources/vedio/dmtca-casestudy.mp4">
+                          </video>
+                       </figure>
+                    </div>
+                 </div>
                 <div class="module wrag__module dmtc__module dmtc__mp padding_on_top_velocities m-p wragby__mp"
                     style="background: #00855A;" data-humcolor="#fff">
                     <div class="container-fluid">
@@ -293,8 +305,13 @@
                         <div class="color-div flex dmtc__color__section">
                             <div class="color__section dmtc__color__sec wrag__color__section">
                                 <div data-scroll-target="#colorc" data-scroll data-scroll-speed="1">
-                                    <img class="gcm__color dmtc__color" src="/assets/resources/img/dmtca/color.webp"
-                                        alt="image">
+                                    <!-- <img class="gcm__color dmtc__color" src="/assets/resources/img/dmtca/color.webp"
+                                        alt="image"> -->
+                                        <picture>
+                                            <source media="(min-width:650px)" srcset="/assets/resources/img/dmtca/color.webp">
+                                            <source media="(max-width:465px)" srcset="/assets/resources/img/dmtca/mob-color.webp">
+                                            <img src="/assets/resources/img/dmtca/color.webp" alt="Flowers" style="width:auto;">
+                                          </picture>
                                 </div>
                             </div>
                         </div>
