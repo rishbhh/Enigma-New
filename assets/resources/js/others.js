@@ -1,27 +1,27 @@
 
-// gsap.utils.toArray(".next").forEach((el) => {
+gsap.utils.toArray(".next").forEach((el) => {
 
-//     const image = el.querySelector('img.swipeimage'),
-//         setX = gsap.quickSetter(image, "x", "px"),
-//         setY = gsap.quickSetter(image, "y", "px"),
-//         align = e => {
-//             const top = el.getBoundingClientRect().top;
-//             setX(e.clientX);
-//             setY(e.clientY - top);
-//         },
-//         startFollow = () => document.addEventListener("mousemove", align),
-//         stopFollow = () => document.removeEventListener("mousemove", align),
-//         fade = gsap.to(image, { autoAlpha: 1, opacity: 0.7, scale: 1,duration:0.5, ease: "power2.inOut", paused: true, onReverseComplete: stopFollow },"-=0.5");
+    const image = el.querySelector('img.swipeimage'),
+        setX = gsap.quickSetter(image, "x", "px"),
+        setY = gsap.quickSetter(image, "y", "px"),
+        align = e => {
+            const top = el.getBoundingClientRect().top;
+            setX(e.clientX);
+            setY(e.clientY - top);
+        },
+        startFollow = () => document.addEventListener("mousemove", align),
+        stopFollow = () => document.removeEventListener("mousemove", align),
+        fade = gsap.to(image, { autoAlpha: 1, opacity: 0.7, scale: 1,duration:0.5, ease: "power2.inOut", paused: true, onReverseComplete: stopFollow },"-=0.5");
 
-//     el.addEventListener('mouseenter', (e) => {
-//         fade.play();
-//         // startFollow();
-//         // align(e);
-//     });
+    el.addEventListener('mouseenter', (e) => {
+        fade.play();
+        // startFollow();
+        // align(e);
+    });
 
-//     el.addEventListener('mouseleave', () => fade.reverse());
+    el.addEventListener('mouseleave', () => fade.reverse());
 
-// });
+});
 
 if (document.body.contains(document.getElementById('cover-pr'))) {
 

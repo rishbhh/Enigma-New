@@ -682,13 +682,12 @@
 }
 
 .last {
-  padding: 5% 12%;
+  padding: 3% 8%;
 
   .gr-b {
-    font-size: 2.6em;
+    font-size: 2.1em;
     font-family: "Ageo-SemiBold";
     letter-spacing: 3px;
-    text-align: center;
     color: #2b2b2b;
     overflow: hidden;
     line-height: 1.5;
@@ -696,12 +695,19 @@
     .grd {
       color: #fff;
       background-color: #f3ec78;
+      // background-image: linear-gradient(
+      //   45deg,
+      //   dodgerblue,
+      //   purple,
+      //   red,
+      //   dodgerblue
+      // );
       background-image: linear-gradient(
         45deg,
-        dodgerblue,
-        purple,
-        red,
-        dodgerblue
+        rgb(37, 37, 37),
+        rgb(0, 0, 0),
+        rgb(52, 52, 52),
+        rgb(58, 58, 58)
       );
       background-size: 200% 200%;
       -webkit-background-clip: text;
@@ -714,16 +720,14 @@
 }
 
 .service-points {
-  padding: 10% 0;
+  padding: 10% 10%;
 
-  .container {
-    width: 80%;
 
     h2 {
       font-size: 1.6em;
       line-height: 1.7;
       letter-spacing: 2px;
-      color: #fff;
+      color: #444;
       margin-bottom: 20px;
       font-family: "Ageo-SemiBold";
     }
@@ -736,75 +740,169 @@
     .pointrs-se {
       display: flex;
       .left-content {
-        padding: 59px 40px;
-        background: #000;
+        padding: 59px 0px;
         margin-right: 6.9%;
         z-index: 2;
         position: relative;
+        width: 62%;
         // width: 91%;
-        &::before {
-          content: "";
-          position: absolute;
-          left: 10px;
-          top: 10px;
-          right: 10px;
-          bottom: 10px;
-          background: #111215;
-          z-index: -1;
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          left: -10px;
-          top: -10px;
-          right: -10px;
-          bottom: -10px;
-          background: -webkit-gradient(
-            linear,
-            left top,
-            right top,
-            from(#12c2e9),
-            color-stop(#c471ed),
-            to(#f64f59)
-          );
-          background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-          background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-          background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-          z-index: -4;
-        }
+        // &::before {
+        //   content: "";
+        //   position: absolute;
+        //   left: 10px;
+        //   top: 10px;
+        //   right: 10px;
+        //   bottom: 10px;
+        //   background: #111215;
+        //   z-index: -1;
+        // }
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   left: -10px;
+        //   top: -10px;
+        //   right: -10px;
+        //   bottom: -10px;
+        //   background: -webkit-gradient(
+        //     linear,
+        //     left top,
+        //     right top,
+        //     from(#12c2e9),
+        //     color-stop(#c471ed),
+        //     to(#f64f59)
+        //   );
+        //   background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
+        //   background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
+        //   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+        //   z-index: -4;
+        // }
       }
     }
     .point {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-
+      // display: flex;
+      // flex-wrap: wrap;
+      // justify-content: space-between;
+      // align-items: center;
+      margin-top: 8%;
+width: 60%;
+padding: 40px 60px;
+background: #131313;
+// box-shadow: 1px 20px rgba(0, 0, 0, 0.169);
+border-radius: 20px;
+margin-right: 20px;
       li {
-        width: 50%;
-        font-size: 1em;
+        font-size: 1.6em;
         font-family: "Ageo";
-        color: #444;
-        padding-right: 20px;
+        color: rgb(244, 244, 244);
+        padding-left: 20px;
         position: relative;
+        margin-bottom: 6%;
 
         &::before {
           content: "";
           background-image: url(/assets/resources/img/Service-elements/bullet-icon.svg);
-          width: 15px;
-          height: 14px;
-          top: 4px;
-          left: -20px;
+          width: 20px;
+          height: 20px;
+          top: 8px;
+          left: -18px;
           background-size: cover;
           position: absolute;
+          filter: brightness(15.5);
         }
       }
     }
   }
-}
+
 
 //
+.new-sec{
+  padding: 10% 10%;
+  margin-bottom: 0;
+    padding-bottom: 0;
+  .our-u{
+    font-size: 2.7em;
+    font-family: "Ageo-SemiBold";
+    line-height: 1.1;
+    margin-bottom: 10px;
+    background-image: linear-gradient(
+        45deg,
+        dodgerblue,
+        purple,
+        red,
+        dodgerblue
+      );
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: shine 4s linear infinite;
+      animation: shine 4s linear infinite;
+  }
+  h2 {
+    font-size: 1.6em;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    color: #444;
+    margin-bottom: 20px;
+    font-family: "Ageo-SemiBold";
+  }
+  p {
+    padding-right: 0%;
+    margin-bottom: 3%;
+    color: #fff;
+  }
+ .new-d{
+  display: flex;
+ 
+ }
+ .left-content{
+  padding: 59px 0px;
+  margin-right: 6.1%;
+  z-index: 2;
+  position: relative;
+  width: 70%;
+}
+.about-us-content{
+  margin-top: 15%;
+ 
+}
+.about-us-section{
+  margin-bottom: 0px;
+}
+.service__point__S{
+  margin-top: 8%;
+  width: 100%;
+  padding: 40px 60px;
+  background: #131313;
+  background-image: linear-gradient(45deg,#151515,#2e2e2e,#4b4b4b,#292929);
+  // box-shadow: 1px 20px rgba(0, 0, 0, 0.169);
+  border-radius: 20px;
+  margin-right: 20px;
+  .flex-con{
+    flex-wrap: wrap;
+  }
+  li {
+    font-size: 1.6em;
+    font-family: "Ageo";
+    color: rgb(244, 244, 244);
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 6%;
 
+    &::before {
+      content: "";
+      background-image: url(/assets/resources/img/Service-elements/bullet-icon.svg);
+      width: 20px;
+      height: 20px;
+      top: 8px;
+      left: -18px;
+      background-size: cover;
+      position: absolute;
+      filter: brightness(15.5);
+    }
+  }
+}
+}
 .strategy {
   position: relative;
 

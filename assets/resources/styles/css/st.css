@@ -138,10 +138,10 @@ a {
 
 @media (min-width: 1200px) {
 
-  a:focus,
+  /* a:focus,
   a:hover {
     color: #fff;
-  }
+  } */
 }
 
 a.-underline {
