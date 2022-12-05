@@ -9526,6 +9526,9 @@ ul.product-tags li a {
   -webkit-animation: shine 4s linear infinite;
   animation: shine 4s linear infinite;
 }
+.play-video video {
+  width: 100%;
+}
 .service-points {
   padding: 10% 10%;
 }
