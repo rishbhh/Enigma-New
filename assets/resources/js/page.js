@@ -12,6 +12,7 @@ $(document).ready(function() {
     HeroSection();
     ChangeColor();
     About();
+    close()
     Marq();
     Horizontal();
     Changehum();
@@ -752,7 +753,45 @@ function Works() {
         duration: 0.3,
         ease: "power1.In",
     }, "-=0.5")
+  
+}
 
+// 
+
+function close() {
+    let work = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.section-w',
+            start: '-300 top',
+            end: 'bottom top',
+            scroller: ".smooth-scroll",
+                    //onEnter, onLeave, onEnterBack, onLeaveBack
+        toggleActions: "play reset none reset",
+        onEnter: () => {
+            document.querySelector(".accordion-list ").classList.add("header--scrolled");
+          },
+          onLeaveBack: () => {
+            document.querySelector(".accordion-list ").classList.remove("header--scrolled");
+          }
+        },
+    });
+  
+    
+    // ScrollTrigger.create({
+    //     start: "-300 top",
+    //     end: 200,
+    //     markers: true,
+    //     trigger: '.section-w',
+    //     scrub: 1,
+    //     animation: tl,
+    //     toggleClass: { className: "header--scrolled", targets: "#mainHeader" },
+    //     onEnter: () => {
+    //         document.querySelector(".accordion-list ").classList.add("header--scrolled");
+    //       },
+    //       onLeaveBack: () => {
+    //         document.querySelector(".accordion-list ").classList.remove("header--scrolled");
+    //       }
+    //   });
 }
 
 
@@ -772,6 +811,7 @@ function TitleChange() {
 
 }
 
+//
 function Plrax() {
     let prlx = gsap.timeline({
         scrollTrigger: {
@@ -858,6 +898,7 @@ function Serv() {
             ease: Power2.out,
             opacity: 0
         }, "-=0.7")
+       
 
     });
 }

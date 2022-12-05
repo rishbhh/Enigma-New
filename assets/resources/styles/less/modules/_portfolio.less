@@ -2003,13 +2003,13 @@ section:after {
   padding-bottom: 10% !important;
 }
 #poster .ptdl__img_palette {
-  width: 60%;
+  width: 80%;
 }
 #marquee .pdtl {
   position: absolute;
-  top: -140px;
+  top: -105px;
   padding-top: 0px;
-  line-height: 0xp;
+  line-height: 0px;
 }
 .pdtl__video {
   line-height: 0px;
@@ -2026,9 +2026,12 @@ section:after {
 }
 
 .pdtl__pb {
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
-
+.pdtl__color__com {
+  width: 88%;
+  margin: 0 auto;
+}
 @media screen and (max-width: 1024px) {
   #marquee .pdtl {
     top: -95px;
@@ -3606,7 +3609,6 @@ section:after {
   margin-bottom: 10%;
 }
 
-
 /*####### next #######*/
 .next-project {
   background: #efefef;
@@ -3620,14 +3622,13 @@ section:after {
   justify-content: center;
   padding-bottom: 0vw;
   position: relative;
-  overflow: hidden;
 }
 
 .next-project__content {
   width: 76.666667vw;
 }
-.next-project::after{
-  content: '';
+.next-project::after {
+  content: "";
   background: #fff;
   width: 51vw;
   height: 470px;
@@ -3635,7 +3636,7 @@ section:after {
   right: 0;
   transition: 0.3s all ease-in-out;
 }
-.next-project:hover::after{
+.next-project:hover::after {
   width: 0vw;
 }
 .txt--p5 {
@@ -3643,7 +3644,6 @@ section:after {
   line-height: 1.66666667em;
   letter-spacing: 0.4px;
   position: relative;
-  color: rgb(160, 160, 160);
   text-transform: capitalize;
 }
 
@@ -3666,7 +3666,7 @@ section:after {
   text-align: left;
   position: relative;
   padding-bottom: 0.3em;
-z-index: 1;
+  z-index: 1;
   span {
     display: block;
     color: transparent;
@@ -3717,25 +3717,15 @@ z-index: 1;
 
   transition: opacity 0.3s cubic-bezier(0.18, 0, 0.16, 1),
     -webkit-transform 0.3s cubic-bezier(0.18, 0, 0.16, 1);
-  transition: transform 0.3s cubic-bezier(0.18, 0, 0.16, 1),
+  transition: transform 0.3s cubic-bezier(0.18, 0, 0.16, 1);
 }
 
 .next-project:hover .next-project__content a svg {
   transform: translateY(0) translateX(0) rotate(-90deg);
   width: 100px;
-  stroke: #fff;
+
   transition: width 0.3s cubic-bezier(0.18, 0, 0.16, 1),
     -webkit-transform 0.3s cubic-bezier(0.18, 0, 0.16, 1);
-}
-.next-project:hover .next-project__content a .e{
-  stroke: #fff ;
-  transition: width 0.2s cubic-bezier(0.18, 0, 0.16, 1),
-  -webkit-transform 0.2s cubic-bezier(0.18, 0, 0.16, 1);
-}
-.e{
-  stroke: #2b2b2b;
-  transition: width 0.2s cubic-bezier(0.18, 0, 0.16, 1),
-  -webkit-transform 0.2s cubic-bezier(0.18, 0, 0.16, 1);
 }
 
 .scroll-content .active #cover-pr > #cover_d > div {
@@ -4161,7 +4151,7 @@ z-index: 1;
 }
 
 // SAKIB
-// Kedarkala 776px =====================
+// Kedarkala Screen 776px =====================
 
 @media screen and (max-width: 776px) {
   .cer {
@@ -4172,6 +4162,68 @@ z-index: 1;
       .kedar__left {
         width: 100%;
       }
+    }
+  }
+
+  #marquee > div .kedar__marquee {
+    top: -9.5vh;
+    opacity: 50%;
+  }
+  .flx-k1 {
+    .f-1 {
+      display: none;
+    }
+    .f-2 {
+      width: 100%;
+    }
+  }
+  .kedar {
+    div.kedar__left__block {
+      display: block;
+      margin-bottom: 0;
+      text-align: center;
+      figure {
+        transform: none !important;
+      }
+    }
+  }
+
+  .blocco {
+    div.kedar__left__block {
+      margin-bottom: 40px;
+    }
+    div.kedar__top {
+      margin-top: 75px;
+    }
+  }
+  .flx-k {
+    flex-direction: column;
+    .f-1 {
+      width: 100%;
+    }
+    .f-2 {
+      width: 100%;
+      margin: 70px 0;
+    }
+  }
+  #filosofia h2,
+  #goals h2,
+  #portf > div h2,
+  #studio_p h2 {
+    font-size: 2.8em;
+  }
+  .mobile__none {
+    display: none;
+  }
+  .kedar div figure img {
+    width: 70%;
+  }
+  .image-section {
+    .img-right {
+      margin-left: 0px;
+    }
+    .img-left {
+      margin-right: 0px;
     }
   }
 }
@@ -4197,7 +4249,7 @@ z-index: 1;
     padding-bottom: 0px !important;
   }
   #colorc .right-d {
-    padding-top: 30px;
+    padding-top: 60px;
     width: 100%;
   }
   #colorc .right-d img {
@@ -4242,6 +4294,10 @@ z-index: 1;
         }
       }
     }
+  }
+  .blocco div.left_block,
+  .blocco div.right_block {
+    margin-bottom: 55px;
   }
 }
 
@@ -4696,6 +4752,8 @@ z-index: 1;
         .gcm__col {
           width: 100%;
           transform: none !important;
+          padding-right: 15px;
+          height: auto;
         }
       }
     }
@@ -4751,8 +4809,11 @@ z-index: 1;
 
 .dmtc__typo__section {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+}
+.dmtc__center {
+  justify-content: center;
 }
 
 .blocco div.dmtc__end__sec {
@@ -4788,13 +4849,14 @@ z-index: 1;
 
 @media screen and (max-width: 1920px) {
   .dmtc .module--header__bg {
-    left: 25%;
+    top: 30%;
+    left: 30%;
   }
 }
 
 @media screen and (max-width: 1537px) {
   .dmtc .module--header__bg {
-    top: 18%;
+    top: 26%;
     left: 23%;
   }
   .dharan .el2 {
@@ -4866,6 +4928,9 @@ z-index: 1;
     .container-fluid {
       .dmtc__row {
         display: block;
+        margin-right: 50px;
+        margin-left: 0;
+
         .dmtc__col {
           width: 100%;
           transform: none !important;
@@ -4886,6 +4951,9 @@ z-index: 1;
     div.dmtc__left__block {
       margin-bottom: 0px;
     }
+  }
+  .dmtc__typo__section {
+    justify-content: center;
   }
 }
 
@@ -4914,7 +4982,7 @@ z-index: 1;
     transform: scale(1.3);
   }
   .dmtc__module {
-    padding: 30% 0 20% 0 !important;
+    padding: 20% 0 5% 0 !important;
   }
   .dmtc__color {
     width: 80%;
@@ -4927,6 +4995,15 @@ z-index: 1;
 // DMTCA End
 
 // QuickX ================================
+
+.blocco {
+  div.quick__left__block {
+    margin-bottom: 50px;
+    .img__mobile {
+      display: none;
+    }
+  }
+}
 
 @media screen and (max-width: 776px) {
   .h2-h {
@@ -4946,7 +5023,6 @@ z-index: 1;
       margin-top: 40px;
       .quick__list {
         width: 100%;
-        margin-bottom: 0%;
         ul {
           li {
             margin-bottom: 25px;
@@ -4962,6 +5038,16 @@ z-index: 1;
   .blocco {
     div.quick__left__block {
       margin-bottom: 50px;
+      .img__desktop {
+        display: none;
+      }
+      .img__mobile {
+        display: block;
+      }
+      .icons__img {
+        width: 70%;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -4973,10 +5059,23 @@ z-index: 1;
           transform: none !important;
           width: 100%;
         }
+        .mobile__col {
+          text-align: right;
+          margin-right: 10px;
+          img {
+            width: 70%;
+          }
+        }
       }
     }
   }
   .quick__pt {
     padding: 0px;
+  }
+  .userflow__mobile {
+    display: none;
+  }
+  .module .container-fluid .row .box-parallax-2 {
+    position: static;
   }
 }

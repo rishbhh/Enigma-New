@@ -166,7 +166,19 @@
   margin-bottom: 30px;
   color: #444;
 }
-
+.header {
+  background-color: #ffcc00;
+  height: 200px;
+  padding: 10px;
+  //position: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  &--scrolled li .cont{
+   max-height: 0 !important;
+  }
+}
 .accordion-list .cont {
   // display: flex ;
   // align-items: center;
@@ -718,8 +730,11 @@
     }
   }
 }
-.play-video video{
-width: 100%;
+// .section-w .c-col-12>div{
+//   height: 1399px !important;
+// }
+.close-height{
+  max-height: 0;
 }
 .service-points {
   padding: 10% 10%;
