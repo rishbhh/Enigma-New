@@ -16,7 +16,7 @@ $(document).ready(function() {
     Marq();
     Horizontal();
     Changehum();
-    iamge_move()
+    // iamge_move()
     splt()
     hd();
     Opaci();
@@ -795,27 +795,27 @@ function close() {
     //   });
 }
 
-function iamge_move(){
-    const items = document.querySelectorAll('.s1')
+// function iamge_move(){
+//     const items = document.querySelectorAll('.s1')
 
-    items.forEach((el) => {
-      const image = el.querySelector('img')
+//     items.forEach((el) => {
+//       const image = el.querySelector('img')
       
-      el.addEventListener('mouseenter', (e) => {
-        gsap.to(image, { autoAlpha: 1, scale:1,  })
-      })
+//       el.addEventListener('mouseenter', (e) => {
+//         gsap.to(image, { autoAlpha: 1, scale:1,  })
+//       })
       
-       el.addEventListener('mouseleave', (e) => {
-        gsap.to(image, { autoAlpha: 0, scale:0 })
-      })
+//        el.addEventListener('mouseleave', (e) => {
+//         gsap.to(image, { autoAlpha: 0, scale:0 })
+//       })
       
-      el.addEventListener('mousemove', (e) => {
-        gsap.set(image, { x: e.offsetX - 300, })
-      })
-    })
+//       el.addEventListener('mousemove', (e) => {
+//         gsap.set(image, { x: e.offsetX - 300, })
+//       })
+//     })
     
     
-}
+// }
 
 // title change
 function TitleChange() {
