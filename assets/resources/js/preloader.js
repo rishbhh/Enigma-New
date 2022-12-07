@@ -987,17 +987,31 @@
                     transformOrigin: "left",
                     x: -100
                 }, "-=1.3")
-                gsap.from(".welcome-heading", 1, {
+                // gsap.from(".welcome-heading", 1, {
+                //     opacity: 0,
+                //     duration: 1.7,
+                //     ease: "power4.inOut"
+                // }, )
+                gsap.from('.welcome-heading img',2,{
                     opacity: 0,
-                    duration: 1.7,
+                    duration: 0.5,
+                    y:-200,
                     ease: "power4.inOut"
-                }, )
-        
+                },"-=1")
+                gsap.from('.welcome-heading h1 .s span',2,{
+                    opacity: 0,
+                    duration: 1,
+                    y:100,
+                    skewy:100,
+                    ease: "power4.inOut"
+                },"-=1")
+                
                 gsap.from('.gform_wrapper', 1, {
                     opacity: 0,
                     duration: 0.5,
                     ease: "power4.inOut"
                 }, "-=2")
+             
                 showcaseOpenings();
                 initShort();
                 let mobileQuery = window.matchMedia('(max-width: 900px)');

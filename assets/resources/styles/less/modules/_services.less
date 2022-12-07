@@ -307,6 +307,61 @@
   bottom: -4px;
   transform-origin: right center;
 }
+// hero section
+.service-hero{
+  padding: 10%;
+  .service-hero-inner{
+    position: relative;
+    .welcome-heading{
+      text-align: center;
+      overflow: visible;
+      .flote{
+        animation: float 6s ease-in-out infinite;
+        position: relative;
+        z-index: -1;
+      }
+      img{
+        position: absolute;
+        top: -340px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 45%;
+       
+        z-index: -2;
+      }
+      h1{
+        text-align: center;
+        font-size: 2.1em;
+    line-height:1.33;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    font-family: "Ageo";
+    text-transform: inherit;
+    padding: 0 17.1%;
+    color: #000000;
+    .s{
+      overflow: hidden;
+      display: inline-block;
+      span{
+
+      display: inline-block;
+      }
+     
+    }
+      }
+      .big-h{
+        font-size: 1em;
+        line-height: 1.33;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        font-family: "NeueHaasDisplay-me-it";
+      }
+    }
+  }
+}
+
 
 /* services */
 .services-s {
@@ -388,6 +443,157 @@
   .align-center {
     align-items: center;
     margin-top: 2%;
+  }
+
+  .flx-end {
+    justify-content: flex-end !important;
+  }
+}
+.c-lerp-block_title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.25rem;
+  font-size: unset !important;
+  line-height: 1.1;
+}
+.c-lerp-block_title.is-inview > span:not([data-scroll]) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.4s;
+}
+.c-lerp-block_title > span:not([data-scroll]) {
+  opacity: 0;
+  transform: translateY(60px) skewY(-100);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+    transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.c-lerp-block_title span {
+  display: inline-block;
+  min-width: 0.3em;
+}
+.services-s2>div.is-inview:before {
+  width: 100%;
+  -webkit-transition: width 1s ease-out;
+  transition: width 1s ease-out;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.services-s2>div:before {
+  content: "";
+  display: block;
+  height: 0.4px;
+  width: 0%;
+  background: #000;
+  position: absolute;
+  top: 0px;
+}
+.services-s2{
+  padding: 0px 10%;
+  margin-top: 30%;
+  margin-bottom:30% ;
+  position: relative;
+  .back-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    filter: blur(29px);
+    opacity: 0.4;
+  }
+  .s1{
+    img {
+      position: absolute;
+      width: 280px;
+      height: 380px;
+      object-fit: cover;
+      transform: translateX(-50%) translateY(-50%);
+      top: 50%;
+      left: 30%;
+      z-index: -1;
+      opacity: 0;
+      visibily: hidden;
+      pointer-events: none;
+    }
+  }
+  .flex-con {
+    display: block;
+    // justify-content: space-between;
+    // align-items: flex-start;
+    margin-bottom: 0%;
+    position: relative;
+  }
+
+  .hed {
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.2;
+    font-family: "NeueHaasDisplay-bol";
+    margin-bottom: 11%;
+  
+  }
+
+  .services-s .flex-con {
+    justify-content: left;
+  }
+
+  .flex-con .fle {
+    width: 100%;
+    position: relative;
+    color: #2b2b2b;
+    padding: 15% 0;
+  }
+
+  // .p-right {
+  //   padding-right: 10%;
+  // }
+
+  // .p-left {
+  //   padding-left: 10%;
+  // }
+
+  .flex-con .fle h3 {
+    font-size: 3em;
+    text-align: left;
+    line-height: 1.2;
+    font-family: "NeueHaasDisplay-me";
+    letter-spacing: 3px;
+    margin-left: 30px;
+    // opacity: 0;
+  }
+
+  .flex-con .gif-area {
+    width: 40%;
+  }
+
+  .content-p {
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+
+  .content-p p {
+    letter-spacing: 1px;
+    color: #444444;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .image {
+    width: 40%;
+    /* height: 940px; */
+    // transform: scale(0);
+    transition: transform 1s ease-in-out;
+    pointer-events: none;
+    // opacity: 0;
+  }
+
+  .visible-image {
+    z-index: -1;
+    transform: translateY(-50%) scale(1);
+  }
+
+  .align-center {
+    align-items: center;
+    margin-top: 0%;
   }
 
   .flx-end {

@@ -9156,6 +9156,57 @@ ul.product-tags li a {
   -webkit-transform-origin: right center;
           transform-origin: right center;
 }
+.service-hero {
+  padding: 10%;
+}
+.service-hero .service-hero-inner {
+  position: relative;
+}
+.service-hero .service-hero-inner .welcome-heading {
+  text-align: center;
+  overflow: visible;
+}
+.service-hero .service-hero-inner .welcome-heading .flote {
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+  position: relative;
+  z-index: -1;
+}
+.service-hero .service-hero-inner .welcome-heading img {
+  position: absolute;
+  top: -340px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 45%;
+  z-index: -2;
+}
+.service-hero .service-hero-inner .welcome-heading h1 {
+  text-align: center;
+  font-size: 2.1em;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  font-family: "Ageo";
+  text-transform: inherit;
+  padding: 0 17.1%;
+  color: #000000;
+}
+.service-hero .service-hero-inner .welcome-heading h1 .s {
+  overflow: hidden;
+  display: inline-block;
+}
+.service-hero .service-hero-inner .welcome-heading h1 .s span {
+  display: inline-block;
+}
+.service-hero .service-hero-inner .welcome-heading .big-h {
+  font-size: 1em;
+  line-height: 1.33;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-family: "NeueHaasDisplay-me-it";
+}
 /* services */
 .services-s {
   padding: 0px 10%;
@@ -9237,6 +9288,148 @@ ul.product-tags li a {
   margin-top: 2%;
 }
 .services-s .flx-end {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+.c-lerp-block_title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.25rem;
+  font-size: unset !important;
+  line-height: 1.1;
+}
+.c-lerp-block_title.is-inview > span:not([data-scroll]) {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+.c-lerp-block_title > span:not([data-scroll]) {
+  opacity: 0;
+  -webkit-transform: translateY(60px) skewY(-100);
+          transform: translateY(60px) skewY(-100);
+  -webkit-transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.c-lerp-block_title span {
+  display: inline-block;
+  min-width: 0.3em;
+}
+.services-s2 > div.is-inview:before {
+  width: 100%;
+  -webkit-transition: width 1s ease-out;
+  transition: width 1s ease-out;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.services-s2 > div:before {
+  content: "";
+  display: block;
+  height: 0.4px;
+  width: 0%;
+  background: #000;
+  position: absolute;
+  top: 0px;
+}
+.services-s2 {
+  padding: 0px 10%;
+  margin-top: 30%;
+  margin-bottom: 30% ;
+  position: relative;
+}
+.services-s2 .back-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  -webkit-filter: blur(29px);
+          filter: blur(29px);
+  opacity: 0.4;
+}
+.services-s2 .s1 img {
+  position: absolute;
+  width: 280px;
+  height: 380px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 30%;
+  z-index: -1;
+  opacity: 0;
+  visibily: hidden;
+  pointer-events: none;
+}
+.services-s2 .flex-con {
+  display: block;
+  margin-bottom: 0%;
+  position: relative;
+}
+.services-s2 .hed {
+  font-size: 3em;
+  text-align: center;
+  line-height: 1.2;
+  font-family: "NeueHaasDisplay-bol";
+  margin-bottom: 11%;
+}
+.services-s2 .services-s .flex-con {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.services-s2 .flex-con .fle {
+  width: 100%;
+  position: relative;
+  color: #2b2b2b;
+  padding: 15% 0;
+}
+.services-s2 .flex-con .fle h3 {
+  font-size: 3em;
+  text-align: left;
+  line-height: 1.2;
+  font-family: "NeueHaasDisplay-me";
+  letter-spacing: 3px;
+  margin-left: 30px;
+}
+.services-s2 .flex-con .gif-area {
+  width: 40%;
+}
+.services-s2 .content-p {
+  margin-left: 30px;
+  margin-top: 0px;
+}
+.services-s2 .content-p p {
+  letter-spacing: 1px;
+  color: #444444;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.services-s2 .image {
+  width: 40%;
+  /* height: 940px; */
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  pointer-events: none;
+}
+.services-s2 .visible-image {
+  z-index: -1;
+  -webkit-transform: translateY(-50%) scale(1);
+          transform: translateY(-50%) scale(1);
+}
+.services-s2 .align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0%;
+}
+.services-s2 .flx-end {
   -webkit-box-pack: end !important;
       -ms-flex-pack: end !important;
           justify-content: flex-end !important;
