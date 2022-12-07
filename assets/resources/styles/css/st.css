@@ -1387,7 +1387,6 @@ html:not(.has-scroll-smooth) .c-fixed {
 .c-lerp-block_title {
   display: inline-block;
   vertical-align: middle;
-  font-size: 0;
   margin-left: 1.25rem;
   line-height: 1.1;
 }
@@ -1405,12 +1404,12 @@ html:not(.has-scroll-smooth) .c-fixed {
     transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.c-lerp-block_title span {
+/* .c-lerp-block_title span {
   display: inline-block;
   min-width: 0.3em;
-}
+} */
 
-@media (max-width: 699px) {
+/* @media (max-width: 699px) {
   .c-lerp-block_title span {
     font-size: 1.5625rem;
   }
@@ -1420,7 +1419,7 @@ html:not(.has-scroll-smooth) .c-fixed {
   .c-lerp-block_title span {
     font-size: 4.375rem;
   }
-}
+} */
 
 .c-cta_line {
   margin: 0;

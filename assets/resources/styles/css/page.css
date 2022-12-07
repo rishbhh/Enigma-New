@@ -9207,7 +9207,85 @@ ul.product-tags li a {
   margin-bottom: 0px;
   font-family: "NeueHaasDisplay-me-it";
 }
+.container {
+  position: relative;
+}
 /* services */
+.particale-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.particale-bg .aerosols {
+  position: relative;
+  z-index: 0;
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.particale-bg .aerosols .aerosols-particles,
+.particale-bg .aerosols .aerosols-particles-item {
+  position: absolute;
+  pointer-events: none;
+}
+.particale-bg .aerosols .aerosols-particles {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 5;
+  contain: content;
+  font-size: 30px;
+}
+.particale-bg .parti-1 {
+  top: 59px;
+  left: 110px;
+}
+.particale-bg .parti-2 {
+  right: 130px;
+  top: 150px;
+}
+.particale-bg .parti-3 {
+  left: 129px;
+  top: 28%;
+}
+.particale-bg .parti-4 {
+  right: 13%;
+  top: 22%;
+}
+.particale-bg .parti-5 {
+  top: 53%;
+  left: 134px;
+}
+.particale-bg .parti-6 {
+  right: 9%;
+  top: 43%;
+}
+.particale-bg .parti-7 {
+  left: 12%;
+  top: 79%;
+}
+.particale-bg .parti-8 {
+  bottom: 0;
+  right: 130px;
+}
+.particale-bg .parti-9 {
+  bottom: 25%;
+  right: 10%;
+}
 .services-s {
   padding: 0px 10%;
   margin-top: 20%;
@@ -9296,7 +9374,6 @@ ul.product-tags li a {
   display: inline-block;
   vertical-align: middle;
   margin-left: 1.25rem;
-  font-size: unset !important;
   line-height: 1.1;
 }
 .c-lerp-block_title.is-inview > span:not([data-scroll]) {
@@ -9310,6 +9387,22 @@ ul.product-tags li a {
   opacity: 0;
   -webkit-transform: translateY(60px) skewY(-100);
           transform: translateY(60px) skewY(-100);
+  -webkit-transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.c-lerp-block_title.is-inview p > span:not([data-scroll]) {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+.c-lerp-block_title p > span:not([data-scroll]) {
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
   -webkit-transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -9395,6 +9488,7 @@ ul.product-tags li a {
   font-family: "NeueHaasDisplay-me";
   letter-spacing: 3px;
   margin-left: 30px;
+  overflow: hidden;
 }
 .services-s2 .flex-con .gif-area {
   width: 40%;
@@ -9407,6 +9501,7 @@ ul.product-tags li a {
   letter-spacing: 1px;
   color: #444444;
   font-weight: 400;
+  overflow: hidden;
   line-height: 1.5;
 }
 .services-s2 .image {
