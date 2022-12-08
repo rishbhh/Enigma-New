@@ -1000,7 +1000,7 @@
                 },"-=1")
                 gsap.from('.welcome-heading h1 .s span',2,{
                     opacity: 0,
-                    duration: 0.8,
+                    duration: 0.6,
                     y:100,
                     skewy:100,
                     ease: "power4.inOut"

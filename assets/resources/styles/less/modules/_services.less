@@ -396,7 +396,6 @@
   overflow: hidden;
   z-index: 5;
   contain: content;
-  font-size: 30px;
 }
 }
 .parti-1{
@@ -640,7 +639,14 @@
   right: 29%;
 
 }
-
+.aerosols-particles-item.is-inview span{
+  transition-delay: 0.9s;
+  font-size: 26px;
+}
+.aerosols-particles-item span{
+font-size: 0px;
+  transition: font-size 1s cubic-bezier(0.17, 0.67, 0.3, 1.33);
+}
 
 }
 .services-s {

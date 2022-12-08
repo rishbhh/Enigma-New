@@ -9248,7 +9248,6 @@ ul.product-tags li a {
   overflow: hidden;
   z-index: 5;
   contain: content;
-  font-size: 30px;
 }
 .particale-bg .parti-1 {
   top: -2%;
@@ -9413,6 +9412,16 @@ ul.product-tags li a {
 .particale-bg .parti-41 {
   top: 9%;
   right: 29%;
+}
+.particale-bg .aerosols-particles-item.is-inview span {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+  font-size: 26px;
+}
+.particale-bg .aerosols-particles-item span {
+  font-size: 0px;
+  -webkit-transition: font-size 1s cubic-bezier(0.17, 0.67, 0.3, 1.33);
+  transition: font-size 1s cubic-bezier(0.17, 0.67, 0.3, 1.33);
 }
 .services-s {
   padding: 0px 10%;
