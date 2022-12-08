@@ -12838,6 +12838,10 @@ section:after {
   padding-top: 22px;
   position: relative;
 }
+.blocco div.patro__left__block {
+  margin-bottom: 0px !important;
+  line-height: 0;
+}
 @media screen and (max-width: 1920px) {
   .module {
     padding: 30% 0;
@@ -13547,7 +13551,7 @@ section:after {
 }
 #marquee .pdtl {
   position: absolute;
-  top: -105px;
+  top: -140px;
   padding-top: 0px;
   line-height: 0px;
 }
@@ -13752,7 +13756,7 @@ section:after {
 }
 #marquee > div .z__ind {
   z-index: 999;
-  top: -7vh;
+  top: -29vh;
   padding-top: 0;
 }
 .blocco div.mb__bottom {
@@ -13849,9 +13853,16 @@ section:after {
     width: 100%;
     -webkit-transform: none !important;
             transform: none !important;
+    padding-right: 40px;
   }
   .blocco div.cert__left__block {
     margin-bottom: 0px !important;
+  }
+  .patr .module--header__bg {
+    display: none;
+  }
+  .p-r-l {
+    padding: 0;
   }
 }
 @media screen and (max-width: 771px) {
@@ -15010,6 +15021,7 @@ section:after {
   justify-content: center;
   padding-bottom: 0vw;
   position: relative;
+  overflow: hidden;
 }
 .next-project__content {
   width: 76.666667vw;
@@ -15018,7 +15030,7 @@ section:after {
   content: "";
   background: #fff;
   width: 51vw;
-  height: 470px;
+  height: 580px;
   position: absolute;
   right: 0;
   -webkit-transition: 0.3s all ease-in-out;
@@ -15033,6 +15045,7 @@ section:after {
   letter-spacing: 0.4px;
   position: relative;
   text-transform: capitalize;
+  color: #ffffff9e;
 }
 .next-project__content .txt--p5 {
   margin-bottom: 0em;
@@ -15110,6 +15123,10 @@ section:after {
   stroke: #fff;
   transition: width 0.3s cubic-bezier(0.18, 0, 0.16, 1), -webkit-transform 0.3s cubic-bezier(0.18, 0, 0.16, 1);
 }
+.e {
+  stroke: #2b2b2b;
+  transition: width 0.2s cubic-bezier(0.18, 0, 0.16, 1), -webkit-transform 0.2s cubic-bezier(0.18, 0, 0.16, 1);
+}
 .scroll-content .active #cover-pr > #cover_d > div {
   -webkit-transform: translateY(0vh) skewY(0deg);
           transform: translateY(0vh) skewY(0deg);
@@ -15121,6 +15138,15 @@ section:after {
           transition-delay: 2s;
 }
 /*############### End Single Project #############*/
+@media screen and (max-width: 1920px) {
+  #marquee > div .kedar__marquee {
+    overflow-x: hidden;
+    position: absolute;
+    width: 100vw;
+    top: -15.5vh;
+    padding-top: 30px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .site-navigation.fullscreen .menu.main-menu > li.menu-item {
     font-size: 54px;
@@ -15329,7 +15355,7 @@ section:after {
             justify-content: center;
   }
   .patr .hro-img {
-    max-width: 850px;
+    max-width: 100%;
     position: relative;
     height: auto;
     top: 0%;
@@ -15443,17 +15469,26 @@ section:after {
   .dharan .hro-img {
     display: inherit;
     position: block;
-    top: -360px;
+    top: 50%;
     margin: auto;
-    left: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 100%;
     right: 0px;
     height: auto;
   }
   .dharan .module--header__bg {
     width: 150px;
-    top: 25%;
-    left: 2%;
+    top: 33%;
+    left: 4%;
+  }
+  .cer {
+    padding: 0 6%;
+  }
+  .dharan__mp {
+    margin-top: 0;
+    padding: 32% 0;
   }
   #colorc .right-d img {
     width: 90%;
@@ -15472,9 +15507,20 @@ section:after {
     position: static;
     width: 100%;
     height: auto;
+    z-index: 99;
   }
   .kedar .module--header__bg {
     display: none;
+  }
+  .module .container-fluid .dharan__row {
+    margin-right: 0;
+  }
+  #marquee > div .kedar__marquee {
+    overflow-x: hidden;
+    position: absolute;
+    width: 100vw;
+    top: -9vh;
+    padding-top: 30px;
   }
 }
 @media screen and (max-width: 776px) {
@@ -15546,7 +15592,10 @@ section:after {
     display: inherit;
     position: absolute;
     margin: auto;
-    top: -150px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 100%;
     right: 0px;
     height: auto;
@@ -15594,7 +15643,7 @@ section:after {
     width: 100%;
     -webkit-transform: none !important;
             transform: none !important;
-    padding-right: 40px;
+    padding-right: 20px;
   }
   .blocco div.left_block,
   .blocco div.right_block {
@@ -15762,8 +15811,8 @@ section:after {
 }
 @media screen and (max-width: 991px) {
   .wragby .module--header__bg {
-    top: 25.8%;
-    left: 5%;
+    top: 33%;
+    left: 4%;
   }
   .gcm__color {
     padding-left: 0px;
@@ -15913,13 +15962,16 @@ section:after {
 .font__pad {
   padding: 0 120px;
 }
+.gcm__color__pad {
+  padding: 170px 0 0 0 !important;
+}
 .mg__btm {
   margin-bottom: 0 !important;
 }
 .gcm .module--header__bg {
   top: 24%;
   right: 32%;
-  width: 15%;
+  width: auto;
   height: auto;
 }
 .container__gcm {
@@ -15993,12 +16045,13 @@ section:after {
   .gcm .module--header__bg {
     display: none;
   }
-  .patra .hro-img {
+  .patra .gcm__hero__img {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     left: 50%;
-    height: 600px;
+    width: 100%;
+    height: auto;
   }
   .font__pad {
     margin-top: 40px;
@@ -16011,6 +16064,9 @@ section:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .m__p {
+    padding: 18% 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -16033,10 +16089,13 @@ section:after {
     height: auto;
   }
   .gcm__portf {
-    padding: 75px 0;
+    padding: 75px 0 !important;
   }
   .blocco div.gcm_block {
     margin-bottom: 55px;
+  }
+  .blocco div.gcm__bottom {
+    margin-bottom: 75px;
   }
   .cer .flex-con {
     margin: 45px 0;
@@ -16054,6 +16113,7 @@ section:after {
   }
   .font__pad {
     padding: 0 10px;
+    margin-top: 5px;
   }
   .blocco div.is-inview figure .scale__img {
     scale: 1.05;
@@ -16141,8 +16201,8 @@ section:after {
 }
 @media screen and (max-width: 991px) {
   .dmtc .module--header__bg {
-    top: 25%;
-    left: 3%;
+    top: 35%;
+    left: 8%;
   }
   #colorc .dmtc__color__sec {
     padding-left: 0;
@@ -16159,6 +16219,9 @@ section:after {
   }
   .margin-r-10 {
     margin-right: 10%;
+  }
+  .dmtc__color__img {
+    padding-left: 50px;
   }
 }
 @media screen and (max-width: 776px) {
@@ -16204,6 +16267,7 @@ section:after {
             transform: none !important;
   }
   .dmtc__color__section img {
+    padding-left: 0;
     margin: 12% 0;
   }
   .blocco div.dmtc__left__block {
@@ -16317,6 +16381,61 @@ section:after {
   }
   .module .container-fluid .row .box-parallax-2 {
     position: static;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pading-left {
+    padding-left: 25%;
+  }
+  #image_ob {
+    height: 50px;
+  }
+  #marquee h2 {
+    font-size: 7em;
+  }
+  .title--title2 {
+    font-size: 3em;
+  }
+  #cover-pr > #cover_d {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  #cover-pr > #cover_d > div {
+    max-width: 110vw;
+    max-height: 107.93vw;
+  }
+  #cover-pr > div#project {
+    margin-top: 0;
+  }
+  #cover-pr > #cover_d {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #cover-pr {
+    padding-top: 0;
+  }
+  #marquee figure {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  #marquee > div > div {
+    top: -11vh;
+  }
+  #marquee > div {
+    height: calc(var(--vh, 1vh) * 60);
+  }
+  .p-r-l {
+    padding: 0px 10% 0 0;
+  }
+  #image_ob > div > div > figure {
+    padding-bottom: 0;
+    padding-top: 60%;
+  }
+}
+@media screen and (max-width: 776px) {
+  #image_ob > div > div > figure {
+    padding-top: 0;
   }
 }
 /* contact */
