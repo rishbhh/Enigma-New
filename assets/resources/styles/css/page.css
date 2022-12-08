@@ -9598,6 +9598,7 @@ ul.product-tags li a {
 .services-s2 .flex-con {
   display: block;
   margin-bottom: 0%;
+  padding: 15% 0;
   position: relative;
 }
 .services-s2 .hed {
@@ -9616,7 +9617,6 @@ ul.product-tags li a {
   width: 100%;
   position: relative;
   color: #2b2b2b;
-  padding: 15% 0;
 }
 .services-s2 .flex-con .fle h3 {
   font-size: 3em;
@@ -9632,14 +9632,14 @@ ul.product-tags li a {
 }
 .services-s2 .content-p {
   margin-left: 30px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 .services-s2 .content-p p {
   letter-spacing: 1px;
   color: #444444;
   font-weight: 400;
   overflow: hidden;
-  line-height: 1.5;
+  line-height: 2;
 }
 .services-s2 .image {
   width: 40%;

@@ -1002,7 +1002,6 @@
                     opacity: 0,
                     duration: 0.6,
                     y:100,
-                    skewy:100,
                     ease: "power4.inOut"
                 },"-=1")
                 

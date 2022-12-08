@@ -16,9 +16,9 @@ $(document).ready(function() {
     Marq();
     Horizontal();
     Changehum();
-    // iamge_move()
-    splt()
+    splt();
     hd();
+    sku()
     Opaci();
     Works();
     toggel()
@@ -98,8 +98,18 @@ window.addEventListener('orientationchange', () => {
  
 // Moobile Js
 const mobile_size = window.matchMedia('(max-width: 900px)');
-
-
+function sku(){
+    let sk = gsap.timeline({
+        scrollTrigger:{
+            trigger:'.sk',
+            start:'top top',
+            scroller:".smooth-scroll",
+    scrub:true
+        }
+        
+    })
+    sk.to(".simple", 0.5, {skewX:0}); 
+}
 if (mobile_size.matches) {
 
     ScrollTrigger.config({
