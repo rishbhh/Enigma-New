@@ -9573,7 +9573,7 @@ ul.product-tags li a {
 }
 .services-s2 .back-bg {
   position: absolute;
-  top: 0;
+  top: -140px;
   left: 0;
   z-index: -2;
   -webkit-filter: blur(29px);
