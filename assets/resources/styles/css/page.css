@@ -9251,40 +9251,168 @@ ul.product-tags li a {
   font-size: 30px;
 }
 .particale-bg .parti-1 {
-  top: 59px;
-  left: 110px;
+  top: -2%;
+  left: 7%;
 }
 .particale-bg .parti-2 {
-  right: 130px;
-  top: 150px;
+  top: -5%;
+  right: 7%;
 }
 .particale-bg .parti-3 {
-  left: 129px;
-  top: 28%;
+  top: -1%;
+  left: 14%;
 }
 .particale-bg .parti-4 {
+  top: -1%;
   right: 13%;
-  top: 22%;
 }
 .particale-bg .parti-5 {
-  top: 53%;
-  left: 134px;
+  top: -4%;
+  left: 44%;
 }
 .particale-bg .parti-6 {
-  right: 9%;
-  top: 43%;
+  top: 3%;
+  left: 34%;
 }
 .particale-bg .parti-7 {
-  left: 12%;
-  top: 79%;
+  top: 16%;
+  right: 35%;
 }
 .particale-bg .parti-8 {
-  bottom: 0;
-  right: 130px;
+  top: 25%;
+  left: 18%;
 }
 .particale-bg .parti-9 {
-  bottom: 25%;
-  right: 10%;
+  top: 26%;
+  right: 14%;
+}
+.particale-bg .parti-10 {
+  top: 35%;
+  left: 11%;
+}
+.particale-bg .parti-11 {
+  top: 35%;
+  left: 11%;
+}
+.particale-bg .parti-12 {
+  top: 49%;
+  left: 34%;
+}
+.particale-bg .parti-13 {
+  top: 54%;
+  right: 44%;
+}
+.particale-bg .parti-14 {
+  top: 59%;
+  left: 14%;
+}
+.particale-bg .parti-15 {
+  top: 62%;
+  right: 14%;
+}
+.particale-bg .parti-16 {
+  top: 69%;
+  left: 34%;
+}
+.particale-bg .parti-17 {
+  top: 79%;
+  right: 24%;
+}
+.particale-bg .parti-18 {
+  top: 83%;
+  left: 22%;
+}
+.particale-bg .parti-19 {
+  top: 90%;
+  right: 13%;
+}
+.particale-bg .parti-20 {
+  top: 96%;
+  left: 6%;
+}
+.particale-bg .parti-21 {
+  top: 98%;
+  right: 30%;
+}
+.particale-bg .parti-22 {
+  top: 93%;
+  left: 34%;
+}
+.particale-bg .parti-23 {
+  top: 108%;
+  right: 37%;
+}
+.particale-bg .parti-24 {
+  top: 109%;
+  left: 30%;
+}
+.particale-bg .parti-25 {
+  top: 95%;
+  left: 50%;
+}
+.particale-bg .parti-26 {
+  top: 80%;
+  left: 50%;
+}
+.particale-bg .parti-27 {
+  top: 33%;
+  left: 43%;
+}
+.particale-bg .parti-28 {
+  top: 40%;
+  left: 49%;
+}
+.particale-bg .parti-29 {
+  top: 62%;
+  left: 55%;
+}
+.particale-bg .parti-30 {
+  top: 72%;
+  left: 91%;
+}
+.particale-bg .parti-31 {
+  top: 74%;
+  left: 3%;
+}
+.particale-bg .parti-32 {
+  top: 108%;
+  right: 3%;
+}
+.particale-bg .parti-33 {
+  top: 66%;
+  right: 20%;
+}
+.particale-bg .parti-34 {
+  top: 106%;
+  left: 16%;
+}
+.particale-bg .parti-35 {
+  top: 66%;
+  right: 20%;
+}
+.particale-bg .parti-36 {
+  top: 0px;
+  right: 20%;
+}
+.particale-bg .parti-37 {
+  top: 19%;
+  right: 29%;
+}
+.particale-bg .parti-38 {
+  top: 21%;
+  left: 9%;
+}
+.particale-bg .parti-39 {
+  top: 28%;
+  right: 9%;
+}
+.particale-bg .parti-40 {
+  top: 41%;
+  left: 4%;
+}
+.particale-bg .parti-41 {
+  top: 9%;
+  right: 29%;
 }
 .services-s {
   padding: 0px 10%;
@@ -14970,6 +15098,7 @@ section:after {
   -webkit-transform: translateY(0) translateX(0) rotate(-90deg);
           transform: translateY(0) translateX(0) rotate(-90deg);
   width: 100px;
+  stroke: #fff;
   transition: width 0.3s cubic-bezier(0.18, 0, 0.16, 1), -webkit-transform 0.3s cubic-bezier(0.18, 0, 0.16, 1);
 }
 .scroll-content .active #cover-pr > #cover_d > div {
