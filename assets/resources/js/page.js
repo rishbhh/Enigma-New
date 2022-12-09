@@ -13,6 +13,7 @@ $(document).ready(function() {
     ChangeColor();
     About();
     close()
+    initParallax();
     Marq();
     Horizontal();
     Changehum();
@@ -35,7 +36,6 @@ $(document).ready(function() {
 // locomotive Scroll
 
 gsap.registerPlugin(ScrollTrigger);
-
 let locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     inertia: 0.8,
@@ -88,7 +88,9 @@ ScrollTrigger.config({
 });
 
 
+selectAll = e => document.querySelectorAll(e);
 
+const slides = selectAll(".slide");
 
 
 // s
@@ -292,7 +294,32 @@ HeroSection()
     port()
     
 // ab
-
+// Parallax Animation
+function initParallax() {
+    
+    slides.forEach((slide, i) => {
+        let imageWrappers = slide.querySelectorAll('.col__image-wrap img, .col__vd-wrap video');
+        
+        gsap.fromTo(imageWrappers, {
+            y: "0vh"
+        },{
+            y: "0vh",
+            scrollTrigger: {
+                trigger: slide,
+                scrub: true,
+                scroller:'.smooth-scroll',
+                start: "top bottom", // position of trigger meets the scroller position
+                snap: {
+                    snapTo: 0.9, // 0.5 'cause the scroll animation range is 200vh for parallax effect
+                    duration: 1,
+                    ease: 'power4.inOut'
+                }
+            },
+            ease: 'none'
+        })
+    });
+}
+initParallax()
 }
 
 function playVideo(el) {
@@ -358,6 +385,33 @@ function hd(){
         duration:'0.5'
     })
 }
+
+// Parallax Animation
+function initParallax() {
+    
+    slides.forEach((slide, i) => {
+        let imageWrappers = slide.querySelectorAll('.col__image-wrap img, .col__vd-wrap video');
+        
+        gsap.fromTo(imageWrappers, {
+            y: "-30vh"
+        },{
+            y: "30vh",
+            scrollTrigger: {
+                trigger: slide,
+                scrub: true,
+                scroller:'.smooth-scroll',
+                start: "top bottom", // position of trigger meets the scroller position
+                snap: {
+                    snapTo: 0.9, // 0.5 'cause the scroll animation range is 200vh for parallax effect
+                    duration: 1,
+                    ease: 'power4.inOut'
+                }
+            },
+            ease: 'none'
+        })
+    });
+}
+
 
 // Hero Section
 function HeroSection() {
