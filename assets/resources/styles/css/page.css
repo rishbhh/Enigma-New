@@ -15715,7 +15715,7 @@ section:after {
     padding: 5%;
   }
   #portf {
-    padding: 100px 50px;
+    padding: 100px 5%;
   }
   #image_ob {
     display: none;
@@ -15727,6 +15727,13 @@ section:after {
   }
 }
 @media screen and (max-width: 776px) {
+  .grid_intern {
+    display: block;
+    padding: 5%;
+  }
+  #portf {
+    padding: 100px 5%;
+  }
   .dharan .hro-img {
     display: inherit;
     position: absolute;
@@ -16016,7 +16023,7 @@ section:after {
   }
   #cover-pr > div#project {
     margin-top: 50px;
-    padding: 80px 0px;
+    padding: 80px 20px;
   }
   #project > div:first-child {
     grid-column: 0.1;
@@ -16047,10 +16054,6 @@ section:after {
   }
   .list__services li {
     width: calc(100% / 1);
-  }
-  #portf {
-    padding: 75px 0px;
-    margin-bottom: 0%;
   }
   #marquee > div {
     height: 8vh;
