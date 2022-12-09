@@ -380,11 +380,11 @@ function hd(){
     })
 }
 
-selectAll = e => document.querySelectorAll(e);
-const slides = selectAll(".slide");
+
 // Parallax Animation
 function initParallax() {
-    
+    selectAll = e => document.querySelectorAll(e);
+const slides = selectAll(".slide");
     slides.forEach((slide, i) => {
         let imageWrappers = slide.querySelectorAll('.col__image-wrap img, .col__vd-wrap video');
         
