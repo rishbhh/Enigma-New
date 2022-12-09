@@ -87,12 +87,6 @@ ScrollTrigger.config({
     autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
 });
 
-
-selectAll = e => document.querySelectorAll(e);
-
-const slides = selectAll(".slide");
-
-
 // s
 window.addEventListener('orientationchange', () => {
     window.location.reload();
@@ -386,6 +380,8 @@ function hd(){
     })
 }
 
+selectAll = e => document.querySelectorAll(e);
+const slides = selectAll(".slide");
 // Parallax Animation
 function initParallax() {
     
