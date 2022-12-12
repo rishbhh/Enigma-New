@@ -290,7 +290,8 @@ HeroSection()
 // ab
 // Parallax Animation
 function initParallax() {
-    
+    selectAll = e => document.querySelectorAll(e);
+    const slides = selectAll(".slide");
     slides.forEach((slide, i) => {
         let imageWrappers = slide.querySelectorAll('.col__image-wrap img, .col__vd-wrap video');
         
@@ -397,11 +398,6 @@ const slides = selectAll(".slide");
                 scrub: true,
                 scroller:'.smooth-scroll',
                 start: "top bottom", // position of trigger meets the scroller position
-                snap: {
-                    snapTo: 0.9, // 0.5 'cause the scroll animation range is 200vh for parallax effect
-                    duration: 1,
-                    ease: 'power4.inOut'
-                }
             },
             ease: 'none'
         })
