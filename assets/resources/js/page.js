@@ -12,7 +12,7 @@ $(document).ready(function() {
     HeroSection();
     ChangeColor();
     About();
-    close()
+    close();
     initParallax();
     Marq();
     Horizontal();
@@ -834,21 +834,6 @@ function close() {
     });
   
     
-    // ScrollTrigger.create({
-    //     start: "-300 top",
-    //     end: 200,
-    //     markers: true,
-    //     trigger: '.section-w',
-    //     scrub: 1,
-    //     animation: tl,
-    //     toggleClass: { className: "header--scrolled", targets: "#mainHeader" },
-    //     onEnter: () => {
-    //         document.querySelector(".accordion-list ").classList.add("header--scrolled");
-    //       },
-    //       onLeaveBack: () => {
-    //         document.querySelector(".accordion-list ").classList.remove("header--scrolled");
-    //       }
-    //   });
 }
 
 // function iamge_move(){

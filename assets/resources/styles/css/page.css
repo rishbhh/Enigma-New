@@ -12059,13 +12059,8 @@ section.horizontal .animation-wrap.to-left {
   .service-hero {
     padding: 10%;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 0;
+    display: block;
+    margin-top: 120px;
   }
   .service-hero .service-hero-inner {
     position: relative;
@@ -14749,7 +14744,7 @@ section:after {
   padding-bottom: 150.593%;
 }
 .split-items .splits-col .split-item .sm {
-  padding-bottom: 70%;
+  padding-bottom: 80%;
 }
 .font__pad {
   padding: 0 120px;
@@ -15121,17 +15116,17 @@ section:after {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(24%, -30%);
     width: auto;
-    height: 406px;
+    height: 196px;
   }
   .patra .hro-img {
     display: inherit;
     position: absolute;
-    top: -360px;
+    top: -270px;
     margin: auto;
     left: 0;
     width: auto;
     right: 0px;
-    height: 670px;
+    height: 520px;
   }
   .patra .el-bg {
     background-image: url(/assets/resources/img/patra-elements/Patra-Icons.png);
@@ -15639,7 +15634,7 @@ section:after {
     height: 622px;
   }
   .gcm .module--header__bg {
-    top: 22%;
+    top: 28%;
     right: 26%;
   }
   .patra .gcm__position {
@@ -16082,7 +16077,7 @@ section:after {
     padding: 5%;
   }
   #portf {
-    padding: 100px 5%;
+    padding: 50px 5%;
   }
   .dharan .hro-img {
     display: inherit;
@@ -16699,6 +16694,10 @@ section:after {
   }
 }
 @media screen and (max-width: 776px) {
+  #start {
+    height: 100vh;
+    min-height: auto;
+  }
   .h2-h {
     font-size: 3em;
   }
@@ -21583,6 +21582,11 @@ body.dark .ar-work-cat,
   }
 }
 @media screen and (max-width: 767px) {
+  .client-section {
+    padding-top: 50%;
+    padding-bottom: 10%;
+    position: relative;
+  }
   .contact-inner .enform_wrapper {
     padding: 0 20px;
   }
