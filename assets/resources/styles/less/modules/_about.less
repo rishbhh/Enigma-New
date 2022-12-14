@@ -3046,11 +3046,7 @@
       }
     }
 
-    @media screen and (max-height: 670px) {
-      .mobile-container {
-        .scale(0.7);
-      }
-    }
+ 
 
     // Koby's Infobox
     // -----------------------
@@ -3061,8 +3057,6 @@
       display: none;
     }
 
-    @media screen and (min-width: 1024px) {
-    }
 
     .main-content {
       max-width: @layout__max-width;
@@ -3273,6 +3267,24 @@
 
     .fixed-image {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-height: 670px) {
+  .mobile-container {
+    .scale(0.7);
+  }
+  #about2 {
+    .container {
+      .parh {
+        font-size: 1.6em;
+        padding-right: 0%;
+        line-height: 2;
+        color: #1a1a1a;
+        letter-spacing: 1px;
+        margin-bottom: 13%;
+    }
     }
   }
 }
