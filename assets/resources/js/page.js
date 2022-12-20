@@ -362,7 +362,7 @@ function ChangeColor() {
         ScrollTrigger.create({
             trigger: colorSection,
             scroller: ".smooth-scroll",
-            start: "top 60%",
+            start: "top top",
             onEnter: () =>
                 gsap.to("body", {
                     backgroundColor: colorSection.dataset.bgcolor,
