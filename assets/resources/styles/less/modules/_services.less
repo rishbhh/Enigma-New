@@ -2939,6 +2939,10 @@ section.horizontal .animation-wrap.to-left {
   padding: 0% 3.3%;
   margin-top: 30px;
 }
+.c-lerp-block_title>span:not([data-scroll]){
+  transform: none !important;
+  opacity: 1 !important;
+}
 }
 @media screen and (max-width: 776px) {
   .ser-hero .top-h .h1-r6 {
@@ -2987,9 +2991,9 @@ section.horizontal .animation-wrap.to-left {
   .ser-c .flex-con .left-d p {
     font-size: 14px;
   }
-  .text_anim p {
-    font-size: 14px;
-  }
+  // .text_anim p {
+  //   font-size: 14px;
+  // }
   .service-points .container .pointrs-se {
     flex-direction: column;
   }
@@ -3031,16 +3035,20 @@ section.horizontal .animation-wrap.to-left {
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .c-lerp-block_title p > span:not([data-scroll]){
     opacity: 1;
+    transform: none;
   }
   .c-lerp-block_title > span:not([data-scroll]){
     opacity: 1;
+  }
+  .services-s2 > div:before{
+    width: 100%;
   }
   .aproch {
     padding: 5% 0;
     position: relative;
     padding-bottom: 0;
     font-family: "NeueHaasDisplay-me";
-    margin-top: 80%;
+    margin-top: 50%;
     .m-0 {
       margin-top: 0 !important;
     }
@@ -3048,7 +3056,7 @@ section.horizontal .animation-wrap.to-left {
       width: 90%;
 
       h2 {
-        font-size: 3em;
+        font-size: 2.8em;
       }
 
       .approach-lis {
@@ -3066,7 +3074,7 @@ section.horizontal .animation-wrap.to-left {
           margin-bottom: 10%;
           width: 100%;
           overflow: hidden;
-
+padding-right: 0px;
           .ap-no {
             position: relative;
             margin-right: 0%;
@@ -3076,7 +3084,7 @@ section.horizontal .animation-wrap.to-left {
             h6 {
               .numb {
                 font-size: 5em;
-                color: #00000012;
+                color: #ffffff10;
               }
             }
           }
@@ -3096,7 +3104,7 @@ section.horizontal .animation-wrap.to-left {
 
           p {
             letter-spacing: 1px;
-            font-size: 12px;
+            font-size: 1.1em;
           }
         }
       }
@@ -3519,9 +3527,9 @@ section.horizontal .animation-wrap.to-left {
   // New Page
 
 .service-hero{
-  padding: 10%;
+  padding: 10% 15px;
   height: 100vh;
-  display: flex;
+  display: block;
   align-items: center;
   .service-hero-inner{
     position: relative;
@@ -3535,7 +3543,7 @@ section.horizontal .animation-wrap.to-left {
       }
       img{
         position: absolute;
-        top: -250px;
+        top: -223px;
         left: 0;
         right: 0;
         margin: auto;
@@ -3544,8 +3552,9 @@ section.horizontal .animation-wrap.to-left {
       }
       h1{
         text-align: center;
-        font-size: 1.6em;
+        font-size: 1.5em;
     line-height:1.33;
+    margin-top: 16%;
     letter-spacing: 1px;
     margin-bottom: 0px;
     font-family: "Ageo";
@@ -3637,7 +3646,7 @@ section.horizontal .animation-wrap.to-left {
   // }
 
   .flex-con .fle h3 {
-    font-size: 3em;
+    font-size: 2.7em;
     text-align: left;
     line-height: 1.2;
     font-family: "NeueHaasDisplay-me";

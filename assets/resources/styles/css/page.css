@@ -1255,9 +1255,34 @@ html.is-ready .c-header_title_line {
   padding-right: 6%;
   padding-left: 6%;
 }
+.anim_line {
+  display: block;
+  overflow: hidden;
+}
+.text-wrapper {
+  display: block;
+  float: left;
+  width: 100%;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .mf-cursor {
     display: none;
+  }
+  .is-inview .text_anim span {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  .text_anim h2 span,
+  .text_anim h3 span {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  .text_anim span {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  #abt > div > div > div::before {
+    width: 100% !important;
   }
 }
 .init-load {
@@ -3330,9 +3355,6 @@ ul.product-tags li a {
   }
 }
 @media screen and (max-width: 991px) {
-  .nav__newsletter-talk > div .buttons .button a {
-    display: none;
-  }
 }
 .nav-second {
   position: absolute;
@@ -3693,7 +3715,7 @@ ul.product-tags li a {
     z-index: 99;
   }
   .nav__showreel {
-    bottom: 8.166667vw;
+    bottom: 16.166667vw;
   }
   .nav__newsletter-talk {
     position: absolute;
@@ -8032,7 +8054,7 @@ ul.product-tags li a {
   }
   .menu-toggle {
     left: unset;
-    right: 0;
+    right: -29px;
   }
   .site-navigation.fullscreen {
     height: 100%;
@@ -8789,7 +8811,7 @@ ul.product-tags li a {
     font-size: 0.8em;
   }
   #about2 .container .parh {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .client-section .container .parh {
     font-size: 1em ;
@@ -11429,6 +11451,11 @@ section.horizontal .animation-wrap.to-left {
     padding: 0% 3.3%;
     margin-top: 30px;
   }
+  .c-lerp-block_title > span:not([data-scroll]) {
+    -webkit-transform: none !important;
+            transform: none !important;
+    opacity: 1 !important;
+  }
 }
 @media screen and (max-width: 776px) {
   .ser-hero .top-h .h1-r6 {
@@ -11477,9 +11504,6 @@ section.horizontal .animation-wrap.to-left {
   .ser-c .flex-con .left-d p {
     font-size: 14px;
   }
-  .text_anim p {
-    font-size: 14px;
-  }
   .service-points .container .pointrs-se {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -11522,16 +11546,21 @@ section.horizontal .animation-wrap.to-left {
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .c-lerp-block_title p > span:not([data-scroll]) {
     opacity: 1;
+    -webkit-transform: none;
+            transform: none;
   }
   .c-lerp-block_title > span:not([data-scroll]) {
     opacity: 1;
+  }
+  .services-s2 > div:before {
+    width: 100%;
   }
   .aproch {
     padding: 5% 0;
     position: relative;
     padding-bottom: 0;
     font-family: "NeueHaasDisplay-me";
-    margin-top: 80%;
+    margin-top: 50%;
   }
   .aproch .m-0 {
     margin-top: 0 !important;
@@ -11540,7 +11569,7 @@ section.horizontal .animation-wrap.to-left {
     width: 90%;
   }
   .aproch .container h2 {
-    font-size: 3em;
+    font-size: 2.8em;
   }
   .aproch .container .approach-lis {
     margin-top: 10%;
@@ -11568,6 +11597,7 @@ section.horizontal .animation-wrap.to-left {
     margin-bottom: 10%;
     width: 100%;
     overflow: hidden;
+    padding-right: 0px;
   }
   .aproch .container .approach-lis .flex-con .ap-no {
     position: relative;
@@ -11577,7 +11607,7 @@ section.horizontal .animation-wrap.to-left {
   }
   .aproch .container .approach-lis .flex-con .ap-no h6 .numb {
     font-size: 5em;
-    color: #00000012;
+    color: #ffffff10;
   }
   .aproch .container .approach-lis .flex-con .ap-prah {
     padding-right: 0%;
@@ -11592,7 +11622,7 @@ section.horizontal .animation-wrap.to-left {
   }
   .aproch .container .approach-lis .flex-con p {
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 1.1em;
   }
   .ser-hero .top-h .h1-r {
     text-align: end;
@@ -11956,11 +11986,9 @@ section.horizontal .animation-wrap.to-left {
     background-color: transparent;
   }
   .service-hero {
-    padding: 10%;
+    padding: 10% 15px;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -11980,7 +12008,7 @@ section.horizontal .animation-wrap.to-left {
   }
   .service-hero .service-hero-inner .welcome-heading img {
     position: absolute;
-    top: -250px;
+    top: -223px;
     left: 0;
     right: 0;
     margin: auto;
@@ -11989,8 +12017,9 @@ section.horizontal .animation-wrap.to-left {
   }
   .service-hero .service-hero-inner .welcome-heading h1 {
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.5em;
     line-height: 1.33;
+    margin-top: 16%;
     letter-spacing: 1px;
     margin-bottom: 0px;
     font-family: "Ageo";
@@ -12067,7 +12096,7 @@ section.horizontal .animation-wrap.to-left {
     color: #2b2b2b;
   }
   .services-s2 .flex-con .fle h3 {
-    font-size: 3em;
+    font-size: 2.7em;
     text-align: left;
     line-height: 1.2;
     font-family: "NeueHaasDisplay-me";
@@ -14151,13 +14180,6 @@ section:after {
 .blocco div.text_anim {
   grid-column: 0.13043478;
 }
-#portf p,
-#colori p {
-  margin-top: 30px;
-  padding-left: 0;
-  font-size: calc(12px + 10 * ((100vw - 320px) / 1920));
-  line-height: calc(24px + 10 * ((100vw - 320px) / 1920));
-}
 .blocco h2 {
   color: var(--black);
   font-size: calc(50px + 10 * ((100vw - 320px) / 1920));
@@ -14223,13 +14245,6 @@ section:after {
 }
 .blocco div.text_anim {
   grid-column: 0.13043478;
-}
-#portf p,
-#colori p {
-  margin-top: 30px;
-  padding-left: 0;
-  font-size: calc(12px + 10 * ((100vw - 320px) / 1920));
-  line-height: calc(24px + 10 * ((100vw - 320px) / 1920));
 }
 .kedar h2 {
   color: var(--black);
@@ -15756,6 +15771,55 @@ section:after {
   }
 }
 @media screen and (max-width: 991px) {
+  .cb-nextcase {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+  }
+  .cb-nextcase .cb-nextcase-content {
+    padding: 180px 0;
+  }
+  .cb-nextcase .cb-nextcase-content .cb-nextcase-body {
+    text-align: center;
+  }
+  .cb-nextcase .cb-nextcase-content .cb-nextcase-body .cb-nextcase-container {
+    padding: 0 0px;
+  }
+  .cb-nextcase .cb-nextcase-content .cb-nextcase-body .cb-nextcase-container .cb-nextcase-anchor {
+    display: block;
+    text-align: center;
+  }
+  .cb-nextcase .cb-nextcase-content .cb-nextcase-body .cb-nextcase-container .cb-nextcase-anchor .cb-nextcase-title {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 8px 0;
+    font-size: 60px;
+    z-index: 2;
+    letter-spacing: 0.03em;
+    font-family: 'Ageo';
+    text-decoration: none;
+  }
+  .cb-nextcase .cb-nextcase-content .cb-nextcase-body .cb-nextcase-container .cb-nextcase-anchor .cb-nextcase-title:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: currentColor;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.4, 0.22, 0.21, 1.04);
+    transition: -webkit-transform 0.5s cubic-bezier(0.4, 0.22, 0.21, 1.04);
+    transition: transform 0.5s cubic-bezier(0.4, 0.22, 0.21, 1.04);
+    transition: transform 0.5s cubic-bezier(0.4, 0.22, 0.21, 1.04), -webkit-transform 0.5s cubic-bezier(0.4, 0.22, 0.21, 1.04);
+  }
+  .cb-nextcase .cb-nextcase-content .cb-nextcase-body .cb-nextcase-container .cb-nextcase-anchor:hover .cb-nextcase-title:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  #project p {
+    font-size: 0.9em;
+  }
   #marquee .pdtl {
     top: -80px;
   }
@@ -16229,10 +16293,6 @@ section:after {
     right: 17px;
     overflow: hidden;
   }
-  .menu-toggle {
-    left: unset;
-    right: 0;
-  }
   .site-navigation.fullscreen {
     height: 100%;
   }
@@ -16242,13 +16302,13 @@ section:after {
   .site-navigation.fullscreen .menu.main-menu {
     left: 0;
     bottom: unset;
-    top: 15%;
+    top: 11%;
     -webkit-transform: none;
     transform: none;
   }
   .site-navigation.fullscreen .menu.main-menu > li.menu-item {
-    font-size: 35px;
-    line-height: 60px;
+    font-size: 34px;
+    line-height: 50px;
   }
   .site-navigation.fullscreen ul.ulcol {
     -webkit-column-count: 1;
@@ -16261,7 +16321,7 @@ section:after {
   }
   .menu-widget-right,
   .menu-widget-left {
-    bottom: 108px;
+    bottom: 136px;
     left: 0;
   }
   .sub-back.is-active {

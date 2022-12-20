@@ -2271,13 +2271,6 @@ section:after {
   grid-column: 3 / 23;
 }
 
-#portf p,
-#colori p {
-  margin-top: 30px;
-  padding-left: 0;
-  font-size: calc(12px + 10 * ((100vw - 320px) / 1920));
-  line-height: calc(24px + 10 * ((100vw - 320px) / 1920));
-}
 
 .blocco h2 {
   color: var(--black);
@@ -2338,14 +2331,6 @@ section:after {
 }
 .blocco div.text_anim {
   grid-column: 3 / 23;
-}
-
-#portf p,
-#colori p {
-  margin-top: 30px;
-  padding-left: 0;
-  font-size: calc(12px + 10 * ((100vw - 320px) / 1920));
-  line-height: calc(24px + 10 * ((100vw - 320px) / 1920));
 }
 
 .kedar h2 {
@@ -4107,6 +4092,60 @@ section:after {
 
 
 @media screen and (max-width: 991px) {
+  .cb-nextcase {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    .cb-nextcase-content{
+      padding: 180px 0;
+      .cb-nextcase-body {
+        text-align: center;
+        .cb-nextcase-container{
+          padding: 0 0px;
+          .cb-nextcase-anchor {
+            display: block;
+            text-align: center;
+            .cb-nextcase-title {
+              position: relative;
+              display: inline-block;
+              padding: 0 0 8px 0;
+              font-size: 60px;
+              z-index: 2;
+              letter-spacing: 0.03em;
+              font-family: 'Ageo';
+              text-decoration: none;
+              &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 1px;
+                background: currentColor;
+                -webkit-transition: -webkit-transform .5s cubic-bezier(.4,.22,.21,1.04);
+                transition: -webkit-transform .5s cubic-bezier(.4,.22,.21,1.04);
+                -o-transition: -o-transform .5s cubic-bezier(.4,.22,.21,1.04);
+                -moz-transition: transform .5s cubic-bezier(.4,.22,.21,1.04),-moz-transform .5s cubic-bezier(.4,.22,.21,1.04);
+                transition: transform .5s cubic-bezier(.4,.22,.21,1.04);
+                transition: transform .5s cubic-bezier(.4,.22,.21,1.04),-webkit-transform .5s cubic-bezier(.4,.22,.21,1.04),-moz-transform .5s cubic-bezier(.4,.22,.21,1.04),-o-transform .5s cubic-bezier(.4,.22,.21,1.04);
+            }
+          }
+          &:hover .cb-nextcase-title:before {
+            -webkit-transform: scaleX(0);
+            -moz-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            -o-transform: scaleX(0);
+            transform: scaleX(0);
+        }
+        }
+        }
+    }
+    }
+}
+#project p{
+  font-size: 0.9em;
+}
   #marquee .pdtl {
     top: -80px;
   }
@@ -4631,10 +4670,6 @@ section:after {
     overflow: hidden;
   }
 
-  .menu-toggle {
-    left: unset;
-    right: 0;
-  }
 
   .site-navigation.fullscreen {
     height: 100%;
@@ -4647,15 +4682,15 @@ section:after {
   .site-navigation.fullscreen .menu.main-menu {
     left: 0;
     bottom: unset;
-    top: 15%;
+    top: 11%;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
   }
 
   .site-navigation.fullscreen .menu.main-menu > li.menu-item {
-    font-size: 35px;
-    line-height: 60px;
+    font-size: 34px;
+    line-height: 50px;
   }
 
   .site-navigation.fullscreen ul.ulcol {
@@ -4671,7 +4706,7 @@ section:after {
 
   .menu-widget-right,
   .menu-widget-left {
-    bottom: 108px;
+    bottom: 136px;
     left: 0;
   }
 

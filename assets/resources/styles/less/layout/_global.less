@@ -999,11 +999,31 @@ html.is-ready .c-header_title_line {
   padding-right:6%;
   padding-left:6%;
 }
-
+.anim_line {
+  display: block;
+  overflow: hidden;
+}
+.text-wrapper {
+  display: block;
+  float: left;
+  width: 100%;
+}
 // Mobile Quries
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .mf-cursor {
     display: none;
+  }
+  .is-inview .text_anim span{
+    transform: none !important;
+  }
+  .text_anim h2 span, .text_anim h3 span{
+    transform: none !important;
+  }
+  .text_anim span{
+    transform: none !important;
+  }
+  #abt > div > div > div::before{
+    width: 100% !important;
   }
 }
 

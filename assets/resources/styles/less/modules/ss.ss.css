@@ -11910,6 +11910,9 @@ section.horizontal .animation-wrap.to-left {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  .is-inview .text_anim span{
+    transform: none;
+  }
   .aproch {
     padding: 5% 0;
     position: relative;

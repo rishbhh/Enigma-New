@@ -362,7 +362,7 @@ function ChangeColor() {
         ScrollTrigger.create({
             trigger: colorSection,
             scroller: ".smooth-scroll",
-            start: "top top",
+            start: "-120 top",
             onEnter: () =>
                 gsap.to("body", {
                     backgroundColor: colorSection.dataset.bgcolor,
@@ -903,28 +903,6 @@ function close() {
   
     
 }
-
-// function iamge_move(){
-//     const items = document.querySelectorAll('.s1')
-
-//     items.forEach((el) => {
-//       const image = el.querySelector('img')
-      
-//       el.addEventListener('mouseenter', (e) => {
-//         gsap.to(image, { autoAlpha: 1, scale:1,  })
-//       })
-      
-//        el.addEventListener('mouseleave', (e) => {
-//         gsap.to(image, { autoAlpha: 0, scale:0 })
-//       })
-      
-//       el.addEventListener('mousemove', (e) => {
-//         gsap.set(image, { x: e.offsetX - 300, })
-//       })
-//     })
-    
-    
-// }
 
 // title change
 function TitleChange() {
