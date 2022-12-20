@@ -38,11 +38,12 @@
     <meta name="twitter:image" content="https://www.weareenigma.com./images/enigma-digital.jpg" />
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" type="text/css" rel="preload" as="style"
         onload="this.rel='stylesheet'">
-    <link rel="preload" href="assets/resources/styles/css/page-dist.css" type="text/css" as="style"
+        <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <link rel="preload" href="assets/resources/styles/css/page.css" type="text/css" as="style"
         onload="this.rel='stylesheet'" />
     <link rel="icon" href="/assets/resources/img/fav-icon.png" type="" sizes="16x16">
     <link href="https://unpkg.com/splitting@1.0.0/dist/splitting.css" type="text/css" rel="stylesheet">
-
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKJE9LVB35"></script>
     <script>
@@ -226,17 +227,17 @@
 
                 <div class="menu-widget menu-widget-right">
                     <ul class="social-list">
-                        <li><a href="https://www.facebook.com/in.enigmadigital" target="_blank" data-magnetic=""
-                                data-cursor="-opaque">//Facebook</a></li>
-                        <li><a href="https://www.instagram.com/enigmadigital/" target="_blank" data-magnetic=""
-                                data-cursor="-opaque">//Instagram</a></li>
-                        <li><a href="https://twitter.com/_EnigmaDigital" target="_blank" data-magnetic=""
-                                data-cursor="-opaque">//Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/company/in-enigmadigital" target="_blank" data-magnetic=""
-                                data-cursor="-opaque">//LinkedIn</a>
+                        <li data-magnetic=""
+                        data-cursor="-opaque"><a href="https://www.facebook.com/in.enigmadigital" target="_blank" >//Facebook</a></li>
+                        <li data-cursor="" data-magnetic=""
+                        data-cursor="-opaque"><a href="https://www.instagram.com/enigmadigital/" target="_blank" >//Instagram</a></li>
+                        <li data-magnetic=""
+                        data-cursor="-opaque"><a href="https://twitter.com/_EnigmaDigital" target="_blank" >//Twitter</a></li>
+                        <li data-magnetic=""
+                        data-cursor="-opaque"><a href="https://www.linkedin.com/company/in-enigmadigital" target="_blank" >//LinkedIn</a>
                         </li>
-                        <li><a href="https://www.behance.net/enigma-digital" target="_blank" data-magnetic=""
-                                data-cursor="-opaque">//Behance</a></li>
+                        <li data-magnetic=""
+                        data-cursor="-opaque"><a href="https://www.behance.net/enigma-digital" target="_blank" >//Behance</a></li>
                     </ul>
                 </div>
             </div>
@@ -299,10 +300,10 @@
             <!-- Wrapper Div -->
             <div class="wrapper">
                 <!-- Hero Sec -->
-                <div class="hero-section" data-cursor="-color-whites">
-                    <div class="container_hero" data-humcolor="#ffffff">
+                <div class="hero-section" data-cursor="-opaque-mini">
+                    <div class="container_hero" data-humcolor="#ffffff" data-cursor="-opaque-mini">
                         <div id="noise"></div>
-                        <div class="container_hero_content">
+                        <div class="container_hero_content" data-cursor="-color-white">
                             <svg id="enigma-svg" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"
                                 viewBox="0 0 1020 300" style="enable-background:new 0 0 1020 300;" xml:space="preserve">
@@ -597,7 +598,7 @@
                 </div>
 <!-- End -->
                 <!-- section horizontal scrolll -->
-                <div class="works__inner" data-humcolor="#fff" data-cursor="-color-whites" style="background: #000000;">
+                <div class="works__inner" data-humcolor="#fff" data-cursor="-opaque-mini" style="background: #000000;">
                     <div class="works__hero">
                         <div class="text-left">
                             <h2 class="works__hero__line" data-scroll data-scroll-direction="horizontal"
@@ -633,7 +634,7 @@
                     <div class="about-us-inner d-flex" id="scroll-direction">
                         <div class="about-us-images res o-image" data-scroll data-scroll-sticky
                             data-scroll-target="#scroll-direction">
-                            <img src="/assets/resources/img/Aa.webp" class="lazyload" alt="image"
+                            <img src="/assets/resources/img/home.webp" class="lazyload" alt="image"
                                 title="" />
                         </div>
 
@@ -892,7 +893,7 @@
                                         <!--Project URL-->
                                         <a href="patronum" data-tilt data-tilt-glare="true" data-tilt-max="10"
                                             data-tilt-speed="20" data-cursor-text="View"
-                                            data-cursor=" -color-accent-lilac">
+                                            data-cursor="-color-accent-lilac">
                                             <!--Project Image-->
                                             <div class="ar-work-image o-image" data-scroll>
                                                 <img alt="Project Image"
@@ -1449,7 +1450,7 @@
 
 
     <script rel="preload" as="script" src="/assets/vendors/lib/plugins.js"></script>
-    <script rel="preload" as="script" src="/assets/resources/js/cursor.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
     <script rel="preload" as="script" src="/assets/resources/js/lazysize.js"></script>
     <script rel="preload" as="script" src="assets/resources/js/preloader.js"></script>
     <script rel="preload" as="script" src="assets/resources/js/page.js"></script>

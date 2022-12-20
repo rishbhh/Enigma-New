@@ -70,8 +70,7 @@ ScrollTrigger.scrollerProxy(".smooth-scroll", {
         };
     },
 
-    // follwoing line is not required to work pinning on touch screen
-
+    // follwoing line is not required to work pinning on touch screens
     pinType: document.querySelector(".smooth-scroll").style.transform ?
         "transform" : "fixed"
 });
@@ -86,14 +85,54 @@ ScrollTrigger.refresh();
 ScrollTrigger.config({
     autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
 });
-
+const cursor = new MouseFollower({
+    el: null,
+    container: document.body,
+    className: 'mf-cursor',
+    innerClassName: 'mf-cursor-inner',
+    textClassName: 'mf-cursor-text',
+    mediaClassName: 'mf-cursor-media',
+    mediaBoxClassName: 'mf-cursor-media-box',
+    iconSvgClassName: 'mf-svgsprite',
+    iconSvgNamePrefix: '-',
+    iconSvgSrc: '',
+    dataAttr: 'cursor',
+    hiddenState: '-hidden',
+    textState: '-text',
+    iconState: '-icon',
+    activeState: '-active',
+    mediaState: '-media',
+    stateDetection: {
+        '-pointer': 'a,button',
+        '-opaque': '.my-image',
+        '-hidden': '.my-input',
+        
+    },
+    visible: true,
+    visibleOnState: false,
+    speed: 0.55,
+    ease: 'expo.out',
+    overwrite: true,
+    skewing: 0,
+    skewingText: 2,
+    skewingIcon: 2,
+    skewingMedia: 2,
+    skewingDelta: 0.001,
+    skewingDeltaMax: 0.15,
+    stickDelta: 0.15,
+    showTimeout: 20,
+    hideOnLeave: true,
+    hideTimeout: 300,
+    hideMediaTimeout: 300,
+ 
+}); 
 // s
 window.addEventListener('orientationchange', () => {
     window.location.reload();
   });
  
 // Moobile Js
-const mobile_size = window.matchMedia('(max-width: 900px)');
+const mobile_size = window.matchMedia('(max-width: 991px)');
 function sku(){
     let sk = gsap.timeline({
         scrollTrigger:{
@@ -111,11 +150,7 @@ if (mobile_size.matches) {
     ScrollTrigger.config({
         autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
     });
-    // function splt() {
-
-        
-    // }
-    // splt()
+  
     // Hero Section
 function HeroSection() {
 
@@ -305,20 +340,48 @@ function initParallax() {
             y: "0vh",
             scrollTrigger: {
                 trigger: slide,
-                scrub: true,
+                scrub: false,
                 scroller:'.smooth-scroll',
                 start: "top bottom", // position of trigger meets the scroller position
-                snap: {
-                    snapTo: 0.9, // 0.5 'cause the scroll animation range is 200vh for parallax effect
-                    duration: 1,
-                    ease: 'power4.inOut'
-                }
+
             },
             ease: 'none'
         })
     });
 }
 initParallax()
+
+
+// Change Color
+function ChangeColor() {
+    const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
+    scrollColorElems.forEach((colorSection, i) => {
+        const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
+        const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
+
+        ScrollTrigger.create({
+            trigger: colorSection,
+            scroller: ".smooth-scroll",
+            start: "top 60%",
+            onEnter: () =>
+                gsap.to("body", {
+                    backgroundColor: colorSection.dataset.bgcolor,
+                    color: colorSection.dataset.textcolor,
+                    overwrite: "auto",
+                    duration:0.5
+                },'-=1'),
+            onLeaveBack: () =>
+                gsap.to("body", {
+                    backgroundColor: prevBg,
+                    color: prevText,
+                    overwrite: "auto",
+                    duration:0.5
+                },'-=1')
+        });
+    });
+
+}
+ChangeColor()
 }
 
 function playVideo(el) {
@@ -609,7 +672,8 @@ function worksSlider() {
             var cumba = gsap.to(bgText, {
                 x: "0%",
                 scrollTrigger: {
-                    trigger: $this,
+                    trigger: 
+                    $this,
                     start: "top top",
                     end: "bottom top",
                     scrub: 4,
@@ -1148,7 +1212,7 @@ function splt() {
     // ################ END Split in span ################## 
     var loop_split
     var wid_w = window.innerWidth;
-    if (wid_w > 440) {
+    if (wid_w > 991) {
         loop_split = document.querySelectorAll(".spline_p");
 
         for (var i = 0; i < loop_split.length; i++) {

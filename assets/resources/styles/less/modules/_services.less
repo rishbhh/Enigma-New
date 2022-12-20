@@ -2726,7 +2726,7 @@ section.horizontal .animation-wrap.to-left {
     padding: 10% 8%;
     height: 100vh;
     display: flex;
-    margin-top: 14%;
+    margin-top: 0%;
     .service-hero-inner{
       position: relative;
       .welcome-heading{
@@ -3029,6 +3029,12 @@ section.horizontal .animation-wrap.to-left {
 
 // Mobile Quries
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .c-lerp-block_title p > span:not([data-scroll]){
+    opacity: 1;
+  }
+  .c-lerp-block_title > span:not([data-scroll]){
+    opacity: 1;
+  }
   .aproch {
     padding: 5% 0;
     position: relative;
@@ -3515,8 +3521,8 @@ section.horizontal .animation-wrap.to-left {
 .service-hero{
   padding: 10%;
   height: 100vh;
-  display: block;
-  margin-top: 120px;
+  display: flex;
+  align-items: center;
   .service-hero-inner{
     position: relative;
     .welcome-heading{

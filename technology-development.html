@@ -42,7 +42,8 @@ that all your requirements are correctly understood. We specialize in designing 
 developing complex business apps, e-commerce portals, social media platforms, and mobile
 applications." />
     <meta name="twitter:image" content="https://www.weareenigma.com./images/enigma-digital.jpg" />
-     <link rel="preload" href="assets/resources/styles/css/page-dist.css" type="text/css" as="style"
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+     <link rel="preload" href="assets/resources/styles/css/page.css" type="text/css" as="style"
         onload="this.rel='stylesheet'" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -432,40 +433,64 @@ applications." />
                     </div>
                 </section>
                 <!-- Services-points -->
-                <section class="service-points" data-scroll="" data-bgcolor="#fff" data-humcolor="#000">
-                    <div class="container text_anim">
-                        <div class="pointrs-se">
-                            <div class="left-content">
-                                <h2 style="padding-right: 0;">
-                                    <span> We work closely with you at all stages of the development process and ensure
-                                        that
-                                        requirements are understood accurately;</span>
-                                </h2>
-                            </div>
-                            <ul class="point opacity-0 service__point__S" data-scroll="" data-scroll-delay="0.10"
-                                data-scroll-offset="130">
-                                <li>User Interface Design</li>
-                                <li>Experience Mapping</li>
-                                <li>User Experience Design</li>
-                                <li>User Flow Mapping</li>
-                                <li>Mobile App Design</li>
-                                <li>Wireframing & Prototyping</li>
-                                <li>Responsive Web Design</li>
-                                <li>Illustrations & Animations</li>
-                                <!-- <li>Responsive Web Design</li> -->
-                                <li>Visual Designs, and</li>
-                                <li>Design Systems Creation</li>
-                                <li>UI Kits</li>
-                            </ul>
+              
+                <section class="about-us-section service__section new-sec" data-humcolor="#000" data-bgcolor="#fff">
+                    <div class="flex-con"  id="scroll-direction">
+                        <div class="left-content" data-scroll="" data-scroll-sticky="" data-scroll-target="#scroll-direction" >
+                            <h2 data-scroll="">
+                                <span class="our-u">
+                                    We work closely
+                                </span>
+                                <br>
+                                <span> with you at all stages of the development process and ensure
+                                    that
+                                    requirements are understood accurately;</span>
+                            </h2>
+                        </div>
+                        <div id="test"></div>
+                      
+                        <div class="about-us-content">
+                            <ul class="point service__point__S opacity-0" data-scroll="" data-scroll-delay="0.20"
+                            data-scroll-offset="130">
+                            <li><span>
+                                User Interface Design
+                                </span></li>
+                            <li><span>
+                                Experience Mapping
+                                </span></li>
+                            <li><span>
+                                User Experience Design
+                                </span></li>
+                            <li><span>
+                                User Flow Mapping
+                                </span></li>
+                            <li><span>
+                                Mobile App Design
+                                </span></li>
+                            <li><span>
+                                Wireframing & Prototyping
+                                </span></li>
+                            <li><span>
+                                Responsive Web Design
+                                </span></li>
+                            <li><span>
+                                Illustrations & Animations
+                                </span></li>
+                            <li><span>
+                                Visual Designs, and Design Systems Creation
+                                </span></li>
+                            <li><span>
+                                UI Kits
+                                </span></li>
+                        </ul>
                         </div>
                     </div>
                 </section>
-
                 <!-- Marquee -->
                 <section class="marquees" style="background: transparent;">
                     <a href="#">
                         <div class="marquees__inner black-strock" aria-hidden="true" ref="inner"
-                            data-cursor-text="Contact Us" data-cursor="-color-bls -lg">
+                            data-cursor-text="Contact Us" data-cursor="-color-bl -lg">
 
                             <div class="marquees__part">
                                 LETS WORK TOGETHER<img src="/assets/resources/img/icons/footer-circle.svg" alt="image" />
@@ -491,7 +516,7 @@ applications." />
                 <!-- footer -->
                 <footer id="footer" class="dark-footer">
                     <div class="f-container">
-                        <div class="top-f" data-cursor="-exclusion -lg" data-cursor-stick="#cursor-stick-area">
+                        <div class="top-f" >
                             <h3>Let’s Build Something </h3>
                             <div class="ctaa" data-cursor="-exclusion -lg" data-cursor-stick="#cursor-stick-area">
                                 <a href="contact.html" class="great-cta" href="" id="cursor-stick-area">
@@ -597,7 +622,7 @@ applications." />
     <script src="/assets/vendors/lib/plugins.js"></script>
     <script src="/assets/resources/js/preloader.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-    <script src="./assets/resources/js/cursor.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
     <script src="assets/resources/js/page.js"></script>
     <script src="assets/resources/js/others.js"></script>
 

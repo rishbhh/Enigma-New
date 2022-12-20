@@ -36,7 +36,8 @@
     <meta name="twitter:description"
         content="Digital Marketing & Creative Design Agency in India ensuring visible ROI through Creative Design, Brand Communication, Social Media Marketing, SEO services, &amp; a lot more." />
     <meta name="twitter:image" content="https://www.weareenigma.com./images/enigma-digital.jpg" />
-    <link rel="preload" href="assets/resources/styles/css/page-dist.css" type="text/css" as="style"
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <link rel="preload" href="assets/resources/styles/css/page.css" type="text/css" as="style"
         onload="this.rel='stylesheet'" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -163,7 +164,7 @@
     <main role="main" id="main">
         <div class="scroll-content smooth-scroll" data-scroll-speed="8">
             <div class="wrapper active" data-bgcolor="#fff">
-                <div id="start" class="qu quick__x" data-humcolor="#fff" style="background:#0E0F13;">
+                <div id="start" class="qu quick__x" data-humcolor="#fff" style="background:#0c0148;">
                     <div class="el1 el-bg"></div>
                     <div class="el2 el-bg"></div>
                     <div class="el3 el-bg"></div>
@@ -222,15 +223,18 @@
                 <div id="marquee">
                     <div data-scroll data-scroll-target="#marquee">
                         <div>
-                            <h2 data-scroll data-scroll-speed="6" data-scroll-direction="horizontal"><span>Crypto
+                            <h2 data-scroll data-scroll-speed="6" data-scroll-direction="horizontal" style="color: #0c0148;"><span>Crypto
                                     Exchange</span></h2>
                         </div>
-                        <figure data-scroll data-scroll-speed="5">
-                            <video autoplay="true" preload="true" loop>
-                                <source src="/assets/resources/vedio/quickx.mp4">
-                            </video>
-                        </figure>
                     </div>
+                </div>
+                <div id="poster" class="blocco slide">
+                    <div class="col__vd-wrap" >
+                        <video playsinline autoplay muted loop
+                        >
+                        <source src="/assets/resources/img/quickx-elements/video_quick.mp4" type="video/mp4">
+                    </video>
+                     </div>
                 </div>
                 <div id="portf" class="grid_intern" data-bgcolor="#fff" data-humcolor="#000">
                     <div class="margin-r-46" data-scroll>
@@ -257,6 +261,25 @@
                             <img alt="image" class="p-r-l img__mobile"
                                 src="/assets/resources/img/quickx-elements/font2.webp">
                         </figure>
+                    </div>
+                </div>
+                <div class="logo-con slide pt-pb">
+                    <div class=" split-items">
+                        <div class="splits-col">
+                            <div class="split-item">
+                                <div class="col__image-wrap right">
+                            <img alt="image"  src="assets/resources/img/quickx-elements/logo.png">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="splits-col right sm">
+                        <div class="split-item">
+                            <div class="col__image-wrap">
+                            <img alt="image" src="assets/resources/img/quickx-elements/mob1.png">
+                        </div>
+                        </div>
+                        </div>
+                       
                     </div>
                 </div>
                 <div id="portf" class="grid_intern" data-bgcolor="#fff" data-humcolor="#000">
@@ -290,7 +313,7 @@
                     <div>
                         <h2 data-scroll-target="#colori" data-scroll data-scroll-speed="2">
                             <span>
-                                Colors Palette </span>
+                                Colour Palette  </span>
                         </h2>
                         <ul data-scroll style="grid-template-columns: 33% 27% 20% 15%">
                             <li>
@@ -337,8 +360,8 @@
                                 <span>USER PERSONA </span>
                             </h2>
                         </div>
-                        <div class="text_anim spline_p text-clor-w">
-                            <p style="color: #fff;">
+                        <div class="text_anim spline_p text-clor-w" style="color: #fff;">
+                            <p >
 
                                 Based on the user interviews and consolidated findings of our research, we got a
                                 better perspective of users’ needs which helped us draw a clear roadmap to the
@@ -368,7 +391,7 @@
                                 <span>USER FLOW</span>
                             </h2>
                         </div>
-                        <div class="text_anim spline_p text-clor">
+                        <div class="text_anim spline_p text-clor" style="color: #fff;">
                             <p>
                                 The user flow lays out the user’s movement, mapping out each and every step a user
                                 takes from the entry point to the final interaction when using the product. This
@@ -385,16 +408,16 @@
                         </figure>
                     </div>
                 </div>
-                <div id="portf" class="grid_intern" data-bgcolor="#0E0F13" data-humcolor="#fff"
+                <div id="portf" class="grid_intern" data-bgcolor="#fff" data-humcolor="#000"
                     style="position: relative;">
 
                     <div class="margin-r-46" data-scroll>
-                        <div class="text_anim text-clor">
+                        <div class="text_anim">
                             <h2 data-scroll-target="#portf">
                                 <span>WIREFRAMES</span>
                             </h2>
                         </div>
-                        <div class="text_anim spline_p text-clor">
+                        <div class="text_anim spline_p">
                             <p>
                                 Provisioning and deprovisioning users within Google Workspace can be time-consuming
                                 and costly. Let Patronum fully automate all the administrator and user tasks to
@@ -404,20 +427,15 @@
                         </div>
                     </div>
                 </div>
-                <div id="poster" class="blocco">
-                    <div class="left_block quick__left__block grid_intern" data-scroll>
-                        <figure>
-                            <img alt="image" class="p-r-l img__desktop"
-                                src="/assets/resources/img/quickx-elements/Wireframes.webp">
-                            <img alt="image" class="p-r-l img__mobile"
-                                src="/assets/resources/img/quickx-elements/page.webp">
-                        </figure>
-                    </div>
+                <div id="poster" class="blocco slide pt-pb pl-pr">
+                    <div class="col__image-wrap" >
+                        <img alt="image" src="/assets/resources/img/quickx-elements/wire.png">
+                     </div>
                 </div>
                 <div id="portf" class="grid_intern" data-bgcolor="#fff" data-humcolor="#000"
                     style="position: relative;">
 
-                    <div class="margin-r-46" data-scroll>
+                    <div class="" data-scroll>
                         <div class="text_anim">
                             <h2 data-scroll-target="#portf">
                                 <span>VISUAL DESIGN</span>
@@ -425,105 +443,78 @@
                         </div>
                         <div class="text_anim spline_p">
                             <p>
-                                ONBOARDING SCREENS AND SIGN UP PROCESS
+                                Provisioning and deprovisioning users within Google Workspace can be time-consuming
+                                and costly. Let Patronum fully automate all the administrator and user tasks to
+                                ensure an effective and secure process.
 
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="module quick__pt padding_on_top_velocities" style="padding-top: 0;">
-                    <div class="container-fluid">
-                        <div class="row no-gutters quick__row justify-content-center">
-                            <div class="col-6 quick__col margin_on_top_iota" data-scroll
-                                data-scroll-direction="vertical" data-scroll-speed="-1">
-
-                                <picture class="img-fluid box-parallax-2">
-                                    <img class=" lazyloaded" src="/assets/resources/img/quickx-elements/mobile-1.webp"
-                                        alt="image">
-                                </picture>
-                                <picture class="img-fluid box-parallax-3">
-                                    <img class=" lazyloaded" src="/assets/resources/img/quickx-elements/mobile-2.webp"
-                                        alt="image">
-                                </picture>
-                            </div>
-
-                            <div class="col-4 quick__col mobile__col" data-scroll data-scroll-direction="vertical"
-                                data-scroll-speed="1">
-                                <picture class="img-fluid">
-                                    <img class=" lazyloaded" src="/assets/resources/img/quickx-elements/mobile-3.webp"
-                                        alt="image">
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
+                <div id="poster" class="blocco slide pt-pb">
+                    <div class="col__image-wrap" >
+                        <img alt="image" src="/assets/resources/img/quickx-elements/mob2.png">
+                     </div>
                 </div>
                 <div id="portf" class="grid_intern" data-scroll data-bgcolor="#fff" data-humcolor="#000">
-                    <div class="margin-r-46" data-scroll>
+                    <div class="" data-scroll>
                         <div class="text_anim">
                             <h2 data-scroll-target="#portf">
-                                <span>OTHER SCREENS </span>
+                                <span>Dark SCREENS</span>
                             </h2>
                         </div>
                         <div class="text_anim spline_p">
                             <p>
-                                QuickX is a digital payment solution designed to modernize the billing and payment.
+                                Provisioning and deprovisioning users within Google Workspace can be time-consuming
+                                and costly. Let Patronum fully automate all the administrator and user tasks to
+                                ensure an effective and secure process.
 
                             </p>
                         </div>
                     </div>
                 </div>
-                <div id="poster" class="blocco">
-                    <div class="left_block quick__left__block grid_intern" data-scroll>
-                        <figure>
-                            <img alt="image" src="/assets/resources/img/quickx-elements/dark-screens.webp">
-                        </figure>
-                    </div>
+                <div id="poster" class="blocco slide pt-pb pl-pr">
+                    <div class="col__image-wrap" >
+                        <img alt="image" src="/assets/resources/img/quickx-elements/dark.png">
+                     </div>
                 </div>
-                <div id="portf" class="grid_intern" data-scroll data-bgcolor="#0E0F13" data-humcolor="#fff">
-                    <div class="margin-r-46" data-scroll>
+                <div id="portf" class="grid_intern" data-scroll data-bgcolor="#fff" data-humcolor="#000">
+                    <div class="" data-scroll>
                         <div class="text_anim">
-                            <h2 data-scroll-target="#portf" style="color: #fff;">
+                            <h2 data-scroll-target="#portf" >
                                 <span>LIGHT SCREENS</span>
                             </h2>
                         </div>
-                    </div>
-                </div>
-                <div id="poster" class="blocco">
-                    <div class="left_block quick__left__block grid_intern" data-scroll>
-                        <figure>
-                            <img alt="image" src="/assets/resources/img/quickx-elements/light-screens.webp">
-                        </figure>
-                    </div>
-                </div>
+                        <div class="text_anim spline_p">
+                            <p>
+                                Provisioning and deprovisioning users within Google Workspace can be time-consuming
+                                and costly. Let Patronum fully automate all the administrator and user tasks to
+                                ensure an effective and secure process.
 
-                <div class="next-project" data-logo="white" data-toggle="white" data-say="white"
-                    data-breadcrumb="white">
-                    <div class="next-project__content">
-                        <p class="txt--p5">Next project</p>
-                        <a href="/certvault.html" class="title--title2 next">
-                            <img class="swipeimage" src="/assets/resources/img/works/work-certvault.webp"
-                                alt="next-project">
-                            <span class="s" data-chaffle="en">Certvault
-                            </span>
-                            <svg viewBox="0 0 62 62" version="1.1" xmlns="https://www.w3.org/2000/svg"
-                                xmlns:xlink="https://www.w3.org/1999/xlink">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g transform="translate(5.000000, 5.000000)" stroke="#2b2b2b" stroke-width="15">
-                                        <g>
-                                            <polyline
-                                                transform="translate(37.000000, 37.000000) rotate(-315.000000) translate(-37.000000, -37.000000) "
-                                                points="20 3 54 37 20 71"></polyline>
-                                            <path d="M55,23.5 L-8,23.5"
-                                                transform="translate(23.500000, 23.500000) rotate(-315.000000) translate(-23.500000, -23.500000) ">
-                                            </path>
-                                        </g>
-                                    </g>
-                                </g>
-                            </svg>
-
-                        </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <div id="poster" class="blocco slide pt-pb pl-pr">
+                    <div class="col__image-wrap" >
+                        <img alt="image" src="/assets/resources/img/quickx-elements/light.png">
+                     </div>
+                </div>
+                 <!-- Next Project -->
+                 <section class="cb-nextcase">
+                    <div class="cb-nextcase-content" >
+                        <div class="cb-nextcase-body">
+                            <div class="cb-nextcase-container">
+                                <a class="cb-nextcase-anchor" href="certvault" data-cursor-img="/assets/resources/img/works/work-certvault.webp" data-cursor="-media-blend">
+                                    <span class="cb-nextcase-title">
+                                        <span>Certvault</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>            
+ <!-- Next Project -->
                 <footer id="footer" class="dark-footer">
                     <div class="f-container">
                         <div class="top-f" data-cursor="-exclusion -lg" data-cursor-stick="#cursor-stick-area">
@@ -628,7 +619,7 @@
 
     <script src="/assets/vendors/lib/plugins.js"></script>
     <script src="/assets/resources/js/preloader.js"></script>
-    <script src="./assets/resources/js/cursor.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
     <script src="assets/resources/js/page.js"></script>
     <script src="assets/resources/js/others.js"></script>
     <script>
