@@ -128,11 +128,12 @@ brand partners for the past four years, helping them to achieve the desired resu
 
             <div class="header-widgets">
 
-                <div class="menu-toggle" data-magnetic="" data-cursor="-opaque">
+                <div class="menu-toggle" data-magnetic="" data-cursor="-opaque" onclick="play('sound-chat')">
                     <span class="toggle-line"></span>
                     <span class="toggle-line"></span>
                 </div>
-
+                <audio id="sound-chat" src="/mixkit-mouse-click-close-1113.wav
+                " autostart="false"></audio>
             </div>
             <div class="nav__showreel">
                 <div class="txt--p6 git-button">View</div>
@@ -179,7 +180,7 @@ brand partners for the past four years, helping them to achieve the desired resu
         <div class="scroll-content smooth-scroll" data-scroll-speed="8">
             <div class="wrapper">
                 <!--Section-->
-                <div class="section dd" data-bgcolor="#000" data-humcolor="#ffffff">
+                <div class="section dd" data-bgcolor="#000" data-humcolor="#ffffff" data-cursor="-opaque-mini">
                     <div class="wrapper-full no-gap">
                         <div class="c-col-12 no-gap">
                             <div class="portfolio-showcase carousel-showcase">
@@ -452,7 +453,10 @@ brand partners for the past four years, helping them to achieve the desired resu
                         <div class="c-col-9 no-gap">
 
                             <div class="single-image o-image" data-scroll>
-                                <img alt="Single Image" src="/assets/resources/img/works/work-imagee.png" alt="Project Image">
+                                <!-- <img alt="Single Image" src="/assets/resources/img/works/work-imagee.png" alt="Project Image"> -->
+                                <video playsinline autoplay muted loop>
+                                    <source src="/spacewalks.mp4" type="video/mp4">
+                                </video>
                             </div>
 
                         </div>
