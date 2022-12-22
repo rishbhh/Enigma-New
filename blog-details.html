@@ -40,6 +40,7 @@ and generate more revenue."/>
         onload="this.rel='stylesheet'" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/resources/img/fav-icon.png" type="" sizes="16x16">
     <link href="https://unpkg.com/splitting@1.0.0/dist/splitting.css" type="text/css" rel="stylesheet">
@@ -56,7 +57,7 @@ and generate more revenue."/>
 </head>
 
 
-<body data-barba="wrapper" data-header-sticky="true" data-menu-style="overlay" data-page-loader="true">
+<body data-barba="wrapper" data-header-sticky="true" data-menu-style="overlay" data-page-loader="true" style="background: #fff;">
     <div data-duration="5" class="en-page-loader" data-layout="dark">
         <span class="apl-background"></span>
 
@@ -66,21 +67,18 @@ and generate more revenue."/>
       <!-- Navigation -->
       <div class="site-header">
         <div class="header-wrapper">
-
             <div class="site-branding">
-
-                <div class="logo">
+                <div class="site-logo">
                     <a href="./">
-                        <img alt="Site Logo" class="dark-logo"
-                            src="/assets/resources/img/icons/enigma-en-logo.svg">
+                        <img alt="Site Logo" class="dark-logo" src="/assets/resources/img/icons/enigma-en-logo.svg">
                     </a>
                 </div>
-
             </div>
 
             <div class="site-navigation">
-                <span class="sub-back"><img src="/assets/resources/img/icons/back.png"
-                        class="icofont-long-arrow-left" alt="image"></span>
+                <span class="sub-back"><img src="/assets/resources/img/icons/back.png" class="icofont-long-arrow-left"
+                        alt="image"></span>
+
 
                 <ul class="menu main-menu">
                     <li class="menu-item"><a href="about">About.</a></li>
@@ -104,17 +102,17 @@ and generate more revenue."/>
 
                 <div class="menu-widget menu-widget-right">
                     <ul class="social-list">
-                        <li data-magnetic=""
-                        data-cursor="-opaque"><a href="https://www.facebook.com/in.enigmadigital" target="_blank" >//Facebook</a></li>
-                        <li data-cursor="" data-magnetic=""
-                        data-cursor="-opaque"><a href="https://www.instagram.com/enigmadigital/" target="_blank" >//Instagram</a></li>
-                        <li data-magnetic=""
-                        data-cursor="-opaque"><a href="https://twitter.com/_EnigmaDigital" target="_blank" >//Twitter</a></li>
-                        <li data-magnetic=""
-                        data-cursor="-opaque"><a href="https://www.linkedin.com/company/in-enigmadigital" target="_blank" >//LinkedIn</a>
+                        <li><a href="https://www.facebook.com/in.enigmadigital" target="_blank" data-magnetic=""
+                                data-cursor="-opaque">//Facebook</a></li>
+                        <li><a href="https://www.instagram.com/enigmadigital/" target="_blank" data-magnetic=""
+                                data-cursor="-opaque">//Instagram</a></li>
+                        <li><a href="https://twitter.com/_EnigmaDigital" target="_blank" data-magnetic=""
+                                data-cursor="-opaque">//Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/company/in-enigmadigital" target="_blank" data-magnetic=""
+                                data-cursor="-opaque">//LinkedIn</a>
                         </li>
-                        <li data-magnetic=""
-                        data-cursor="-opaque"><a href="https://www.behance.net/enigma-digital" target="_blank" >//Behance</a></li>
+                        <li><a href="https://www.behance.net/enigma-digital" target="_blank" data-magnetic=""
+                                data-cursor="-opaque">//Behance</a></li>
                     </ul>
                 </div>
             </div>
@@ -175,7 +173,7 @@ and generate more revenue."/>
             <div class="wrapper">
                 <section class="blog-details" data-humcolor="#000">
                     <div class="container">
-                        <div class="content" data-scroll data-scroll-delay="0.1" data-scroll-speed="2">
+                        <div class="content">
                             <p class="typ">UX Best Practices</p>
                             <h1 class="text-rveal">
                                 <span class="header_title_line"><span>WHAT IS EXPERIENCE DESIGN, AND</span> </span><span
@@ -183,40 +181,31 @@ and generate more revenue."/>
                                 </span><span class="header_title_line"><span>EXPERIENCE
                                         DESIGN (UX)?</span>
                             </h1>
-                            <div class="blog-flex">
-                                <div class="date">
-                                    <span>
-                                        <img src="/assets/resources/img/blog-element/time-icon.svg" width="20" alt="image" />
-                                    </span>
-                                    <p>March 09, 2022</p>
-                                </div>
-                                <div class="ad">
-                                    <span>
-                                        <img src="/assets/resources/img/blog-element/user-icon.svg" width="20" alt="image" />
-                                    </span>
-                                    <p>Admin</p>
-                                </div>
-                                <div class="comen">
-                                    <span>
-                                        <img src="/assets/resources/img/blog-element/quote-icon.svg" width="20"
-                                            alt="image" />
-                                    </span>
-                                    <p>Leave a comment</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
+                <div class="container-bl">
+                    <div class="blog-flex">
+                        <div class="date">
+                            <span>
+                                <img src="/assets/resources/img/blog-element/user-icon.svg" width="20" alt="image" />
+                            </span>
+                            <div>
+                            <h6>Bhaskar Varshney</h6>
+                            <p>March 09, 2022</p>
+                        </div>
+                        </div>
+                        <div class="ad">
+                            <p>6 min read</p>
+                        </div>
+                    </div>
                 <div class="hro-img" data-scroll="">
                     <img src="/assets/resources/img/blog-element/Blog-001.webp" class="blog-hero" alt="blog" />
                 </div>
-                <div class="overlap-text">
-                    <p data-scroll="" data-scroll-speed="9" data-scroll-direction="horizontal">Experience Design & User
-                        Experience Design</p>
-                </div>
-                <section class="blog-d" data-humcolor="#000" data-scroll="">
+            </div>
+                <section class="blog-d" data-humcolor="#000" >
                     <div class="container">
-                        <div class="content text_anim">
+                        <div class="content text_anim" data-scroll="">
                             <p class="blog-prha">
                                 <span>
                                     Over the past few years, the term Experience Design and User Experience
@@ -234,8 +223,7 @@ and generate more revenue."/>
                                 </span>
                             </p>
                         </div>
-                        <blockquote class="text_anim">
-                            <p>
+                        <blockquote class="text_anim" data-scroll="">
                                 <span>
                                     “I invented the term because I thought Human Interface and usability were too
                                     narrow: I
@@ -243,108 +231,117 @@ and generate more revenue."/>
                                     industrial
                                     design, graphics, the interface, the physical interaction, and the manual.”
                                 </span>
-                            </p>
+
+                                <span class="light">- Donalad Arthur Norman, Designer</span>
                         </blockquote>
-                </section>
-
-                <div class="container" style="margin-bottom: 10%;">
-                    <div class="flex justify-center" data-scroll="">
-                        <div class="blog-left" data-scroll="">
-                            <!-- <h2>What Is Contrast </h2> -->
-                            <div class="p-img o-image" data-scroll="">
-                                <img src="/assets/resources/img/blog-element/Blog-002.webp" alt="blog"/>
+                        <div class="" data-scroll="">
+                            <div class="blog-right" data-scroll="">
+                                <div class="p-img o-image" data-scroll="">
+                                    <img src="/assets/resources/img/blog-element/Blog-003.webp" alt="blog" />
+                                </div>
                             </div>
                         </div>
-                        <div class="blog-right" data-scroll="">
-                            <div class="p-img o-image" data-scroll="">
-                                <img src="/assets/resources/img/blog-element/Blog-003.webp" alt="blog" />
+                        
+                        <div class="content text_anim" data-scroll="">
+                            <p class="blog-prha">
+                                <span>
+                                    The term User Experience Design was not coined until the early , but examples of Experience Design date back even earlier. For instance, Walt Disney is often regarded as one of the worlds first Experience Designer because of his theme parks and resorts.
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    Walt Disney had the vision to create an amusement park that was fun for both children and adults alike. However, during thes, amusement parks were seen as dirty and dowdy places where children shouldnt go. Walt Disney wanted to change that perception and provide park-goers with a positive experience. The designers and engineers put a lot of thought and contemplation into the park (Disney Imagineers).
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    An example of good experience design at the parks is the variety of choices that visitors can select from. The parks were designed to appeal to all kinds of guests. Whether youre a teenager looking for thrill-seeking rides or a young family wanting to ride Dumbo the flying elephant or the teacup ride, theres something for everyone here.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="" data-scroll="">
+                            <div class="blog-right" data-scroll="">
+                                <div class="p-img o-image" data-scroll="">
+                                    <img src="/assets/resources/img/blog-element/Blog-004.webp" alt="blog" />
+                                </div>
                             </div>
                         </div>
+                        <div class="blog-conent" data-scroll="">
+                        <h2 class="text_anim">
+                            <span>So, what precisely is the difference between Experience Design & User Experience?</span>
+                        </h2>
+                        <p class="text_anim">
+                            <span>
+                                The term User Experience Design was not coined until the early 1990s, but examples of
+                                Experience
+                                Design date back even earlier. For instance, Walt Disney is often regarded as one of the
+                                world’s
+                                first Experience Designer because of his theme parks and resorts.
+                            </span>
+    
+                        </p>
+                        <p class="text_anim">
+                            <span>Walt Disney had the vision to create an amusement park that was fun for both children and
+                                adults
+                                alike. However, during the 1950s, amusement parks were seen as dirty and dowdy places where
+                                children shouldn’t go. Walt Dis¬ney wanted to change that perception and provide park-goers
+                                with
+                                a positive experience. The designers and engineers put a lot of thought and contemplation
+                                into
+                                the park (“Disney Imagineers”).</span>
+                        </p>
+                        <p class="text_anim">
+                            <span>
+                                An example of good experience design at the parks is the variety of choices that visitors
+                                can
+                                select from. The parks were designed to appeal to all kinds of guests. Whether you’re a
+                                teenager
+                                looking for thrill-seeking rides or a young family wanting to ride Dumbo the flying elephant
+                                or
+                                the teacup ride, there’s something for everyone here.
+                            </span>
+                        </p>
                     </div>
-                </div>
-                <div class="blog-conent" data-scroll="">
-                    <p class="text_anim">
-                        <span>
-                            The term User Experience Design was not coined until the early 1990s, but examples of
-                            Experience
-                            Design date back even earlier. For instance, Walt Disney is often regarded as one of the
-                            world’s
-                            first Experience Designer because of his theme parks and resorts.
-                        </span>
+                    <div class="main-tag">
+                        <a class="tag"><span>Design</span></a>
+                              <a class="tag"><span>Tools</span></a>
+                                    <a class="tag"><span>Strategy</span></a>
+                                          <a class="tag"><span>UX Designing</span></a>
+                      </div>
 
-                    </p>
-                    <p class="text_anim">
-                        <span>Walt Disney had the vision to create an amusement park that was fun for both children and
-                            adults
-                            alike. However, during the 1950s, amusement parks were seen as dirty and dowdy places where
-                            children shouldn’t go. Walt Dis¬ney wanted to change that perception and provide park-goers
-                            with
-                            a positive experience. The designers and engineers put a lot of thought and contemplation
-                            into
-                            the park (“Disney Imagineers”).</span>
-                    </p>
-                </div>
+                      <!-- Social Share -->
+                      <div class="social-share">
+                        <div class="icons-share">
+                            <p>Share</p>
+                            <a><i class="fa-brands fa-facebook-f"></i></a>
+                      <a><i class="fa-brands fa-twitter"></i></a>
+                      <a><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <!--  -->
 
-                <div class="blog-conent" data-scroll="">
-                    <p class="text_anim">
-                        <span>
-                            An example of good experience design at the parks is the variety of choices that visitors
-                            can
-                            select from. The parks were designed to appeal to all kinds of guests. Whether you’re a
-                            teenager
-                            looking for thrill-seeking rides or a young family wanting to ride Dumbo the flying elephant
-                            or
-                            the teacup ride, there’s something for everyone here.
-                        </span>
-                    </p>
-                    <h2 class="text_anim">
-                        <span>So, what precisely is the difference between Experience Design & User Experience?</span>
-                    </h2>
-                    <p class="text_anim">
-                        <span>
-                            Well, most people believe it’s a debate about semantics. But we beg to differ.
-                        </span>
-                    </p>
-                </div>
-                <div class="container blg o-image" style="margin-top: 3%;" data-scroll data-scroll-delay="0.1"
-                    data-scroll-speed="2" data-scroll-offset="100">
-                    <img src="/assets/resources/img/blog-element/Blog-004.webp" style="width: 100%;" alt="blog"/>
-                </div>
-                <div class="blog-conent" data-scroll="">
-                    <p class="text_anim">
-                        <span>
-                            In contrast, Experience design (XD) follows a more comprehensive directive. Experience
-                            Design is
-                            a discipline that creates expansive experiences for each & every user in all aspects of a
-                            product, service, or occasion. It looks at digital, physical, and indirect (family member,
-                            friends, family member) experiences from the end-user’s perspective. Experience design
-                            involves
-                            technology but generally considers more elements (like technology, environmental factors,
-                            spatial factors, physical objects) into consideration. Experience designers are holistic
-                            problem
-                            solvers who look at the entire brand ecosystem and focus on ‘moments of engagement,
-                            touchpoints,
-                            between people, and the ideas, feelings, and memories that these interactions create.’
-                        </span>
-                    </p>
-                    <p class="text_anim">
-                        <span>
-                            To summarise, the practice of User Experience (UX) Design focuses primarily on the digital
-                            world,
-                            and Experience Design (XD) takes into account the physical, emotional and digital world.
-                            Both
-                            fields include the use of technology and design. In our humble opinion, it is safe to say
-                            that
-                            User Experience Design is a subset of Experience Design.
-                        </span>
-                    </p>
-                </div>
+                      <div class="next-blog">
+                        <div class="pre">
+                            <a data-cursor="-opaque">
+                            <p>Previous</p>
+                            <h6>How collaboration makes
+                                us better Designer</h6>
+                            </a>
+                        </div>
+                        <div class="nex">
+                            <a data-cursor="-opaque">
+                            <p>Next</p>
+                            <h6>What is wireframing?</h6>
+                        </a >
+                        </div>
+                      </div>
+                        </div>
+                </section>
                 <!-- Marquee -->
                 <section class="marquees" style="background: transparent;">
                     <a href="#">
                         <div class="marquees__inner black-strock" aria-hidden="true" ref="inner"
-                            data-cursor-text="Contact Us" data-cursor="-color-bls -lg">
-
+                            data-cursor-text="Contact Us" data-cursor="-color-bl -lg">
                             <div class="marquees__part">
                                 GET TO KNOW US<img src="/assets/resources/img/icons/footer-circle.svg" alt="image" />
                             </div>
@@ -366,6 +363,7 @@ and generate more revenue."/>
                         </div>
                     </a>
                 </section>
+                <!-- Marquee End -->
                 <!-- footer -->
                 <footer id="footer" class="dark-footer">
                     <div class="f-container">
@@ -456,6 +454,7 @@ and generate more revenue."/>
                         </div>
                     </div>
                 </footer>
+                <!-- footer End -->
             </div>
         </div>
 
