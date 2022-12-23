@@ -950,6 +950,7 @@ font-size: 0px;
 
     .h1-r6 {
       margin-left: 6%;
+      text-align: right;
     }
 
     .element {
@@ -1989,7 +1990,7 @@ section.horizontal .animation-wrap {
   }
   .bo-h {
     padding: 20px 0%;
-    font-size: 1.6em;
+    font-size: 1.5em;
     padding-right: 30%;
     color: #ffffff;
     line-height: 1.4;
@@ -2415,6 +2416,7 @@ section.horizontal .animation-wrap.to-left {
   .ser-two {
     padding: 50px 10vw 0 10vw;
     margin-bottom: 0;
+    margin-top: 30px;
   }
   .ser-two .item::before {
     font-size: 3em;
@@ -2658,7 +2660,7 @@ section.horizontal .animation-wrap.to-left {
     font-size: 4em;
   }
   .ser-hero .top-h h1 {
-    font-size: 6.5em;
+    font-size: 6.3em;
   }
   .ser-hero .top-h .h1-r {
     margin-left: 48%;
@@ -2686,7 +2688,7 @@ section.horizontal .animation-wrap.to-left {
     padding-top: 50px;
   }
   .scroll-sec2 .container h2 {
-    padding-right: 18%;
+    padding-right: 0%;
   }
   .details-f .cont {
     width: 100%;
@@ -2696,6 +2698,7 @@ section.horizontal .animation-wrap.to-left {
   }
   .ser-two .item {
     width: 40%;
+    transform: none !important;
   }
   .service-points .container .pointrs-se {
     flex-direction: column;
@@ -2718,9 +2721,31 @@ section.horizontal .animation-wrap.to-left {
     margin-bottom: 50px;
   }
   .ser-hero .top-h .tech__dev {
-    font-size: 5.5em !important;
+    font-size: 5em ;
   }
-
+.bol-prh{
+  height: auto;
+  .p-s{
+    transform: none !important;
+    font-size: 1.7em;
+    text-align: left;
+    p{
+      transform: none !important;
+      font-size: 1.7em;
+      text-align: left;
+    }
+  }
+  
+}
+.scroll-sec2 .container {
+  width: 90%;
+}
+.ser-two .bo-h {
+  padding-right: 0;
+}
+.ser-two .E-second .bo-h {
+  padding-right: 0%;
+}
   // new page
   .service-hero{
     padding: 10% 8%;
@@ -2945,6 +2970,11 @@ section.horizontal .animation-wrap.to-left {
 }
 }
 @media screen and (max-width: 776px) {
+  
+}
+
+// Mobile Quries
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .ser-hero .top-h .h1-r6 {
     margin-left: 28%;
   }
@@ -2968,7 +2998,7 @@ section.horizontal .animation-wrap.to-left {
     margin-left: 7px;
   }
   .ser-hero .top-h h1 {
-    font-size: 3em !important;
+    font-size: 3em ;
   }
   .bol-prh .p-s {
     font-size: 1.3em !important;
@@ -3029,10 +3059,6 @@ section.horizontal .animation-wrap.to-left {
   .bol-prh p {
     font-size: 1.1em !important;
   }
-}
-
-// Mobile Quries
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .c-lerp-block_title p > span:not([data-scroll]){
     opacity: 1;
     transform: none;
