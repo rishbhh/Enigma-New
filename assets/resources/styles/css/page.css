@@ -10957,6 +10957,9 @@ section.horizontal .animation-wrap.to-left {
   .image-div {
     margin-top: -40%;
   }
+  .tech {
+    margin-top: -50%;
+  }
 }
 @media screen and (max-width: 1680px) {
   .services-s .image {
