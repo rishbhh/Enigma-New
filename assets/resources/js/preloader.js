@@ -451,7 +451,7 @@
                 delay: 1
             })
             var gitButtonAnim = gsap.fromTo('.git-button', {
-                translateY: "-17%",
+                translateY: "50%",
             }, {
                 translateY: "0%",
                 opacity: 1,
